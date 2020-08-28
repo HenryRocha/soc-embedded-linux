@@ -15,9 +15,9 @@ Motor: Rohs Step Motor 28BYJ-48
 
 ## Pinos usados e sua descrição
 
-Switch SW0: Liga ou desliga a rotação do motor.
-Switch SW1: Controla a direção de rotação do motor.
-Switch SW2 e SW3: Controlam a velocidade do motor. Configuração `00` é a mais lenta enquanto `11` é a mais rápida.
+- Switch SW0: Liga ou desliga a rotação do motor.
+- Switch SW1: Controla a direção de rotação do motor.
+- Switch SW2 e SW3: Controlam a velocidade do motor. Configuração `00` é a mais lenta enquanto `11` é a mais rápida.
 
 ## Rúbrica
 
