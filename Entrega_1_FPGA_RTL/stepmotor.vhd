@@ -61,18 +61,33 @@ BEGIN
 
     PROCESS (state)
     BEGIN
-        CASE state IS
-            WHEN s0 =>
-                phases <= "0001";
-            WHEN s1 =>
-                phases <= "0010";
-            WHEN s2 =>
-                phases <= "0100";
-            WHEN s3 =>
-                phases <= "1000";
-            WHEN OTHERS =>
-                phases <= "0000";
-        END CASE;
+        IF (dir = '1') THEN
+            CASE state IS
+                WHEN s0 =>
+                    phases <= "0001";
+                WHEN s1 =>
+                    phases <= "0010";
+                WHEN s2 =>
+                    phases <= "0100";
+                WHEN s3 =>
+                    phases <= "1000";
+                WHEN OTHERS =>
+                    phases <= "0000";
+            END CASE;
+        ELSE
+            CASE state IS
+                WHEN s3 =>
+                    phases <= "0001";
+                WHEN s2 =>
+                    phases <= "0010";
+                WHEN s1 =>
+                    phases <= "0100";
+                WHEN s0 =>
+                    phases <= "1000";
+                WHEN OTHERS =>
+                    phases <= "0000";
+            END CASE;
+        END IF;
     END PROCESS;
 
     PROCESS (vel)
