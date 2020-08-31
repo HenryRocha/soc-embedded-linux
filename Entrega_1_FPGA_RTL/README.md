@@ -29,7 +29,7 @@ Rubrica
 - C
     - [X] Aciona o motor de passos e possui um sinal de:
         - [X] EN (que liga e desliga o motor)
-        - [ ] DIR (que controla a direção na qual o motor gira)
+        - [X] DIR (que controla a direção na qual o motor gira)
         - [X] VEL (quatro velocidades de rotação)
 - D
     - [ ] Entregou o tutorial
