@@ -29,7 +29,7 @@ END ENTITY stepmotor;
 ARCHITECTURE rtl OF stepmotor IS
     TYPE STATE_TYPE IS (s0, s1, s2, s3);
     SIGNAL state : STATE_TYPE := s0;
-    SIGNAL enable : std_logic := '0';
+    SIGNAL timeCounter : std_logic := '0';
     SIGNAL topCounter : INTEGER RANGE 0 TO 50000000;
 
 BEGIN
@@ -38,19 +38,19 @@ BEGIN
         IF (rising_edge(clk)) THEN
             CASE state IS
                 WHEN s0 =>
-                    IF (enable = '1') THEN
+                    IF (timeCounter = '1') THEN
                         state <= s1;
                     END IF;
                 WHEN s1 =>
-                    IF (enable = '1') THEN
+                    IF (timeCounter = '1') THEN
                         state <= s2;
                     END IF;
                 WHEN s2 =>
-                    IF (enable = '1') THEN
+                    IF (timeCounter = '1') THEN
                         state <= s3;
                     END IF;
                 WHEN s3 =>
-                    IF (enable = '1') THEN
+                    IF (timeCounter = '1') THEN
                         state <= s0;
                     END IF;
                 WHEN OTHERS =>
@@ -101,10 +101,10 @@ BEGIN
             IF (en = '1') THEN
                 IF (counter < topCounter) THEN
                     counter := counter + 1;
-                    enable <= '0';
+                    timeCounter <= '0';
                 ELSE
                     counter := 0;
-                    enable <= '1';
+                    timeCounter <= '1';
                 END IF;
             END IF;
         END IF;
