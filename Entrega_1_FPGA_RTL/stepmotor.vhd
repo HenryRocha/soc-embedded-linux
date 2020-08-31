@@ -90,11 +90,11 @@ BEGIN
     BEGIN
         CASE vel IS
             WHEN "00" =>
-                topCounter <= 160000;
+                topCounter <= 400000;
             WHEN "01" =>
-                topCounter <= 140000;
+                topCounter <= 300000;
             WHEN "10" =>
-                topCounter <= 120000;
+                topCounter <= 200000;
             WHEN "11" =>
                 -- Creates a delta time of 2ms between each phase change,
                 -- the minimium for the motor to work. This means that at this
