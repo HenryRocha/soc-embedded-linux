@@ -31,11 +31,13 @@ ARCHITECTURE rtl OF stepmotor IS
     SIGNAL state : STATE_TYPE := s0;
     SIGNAL timeCounter : std_logic := '0';
     SIGNAL topCounter : INTEGER RANGE 0 TO 50000000;
+    SIGNAL stepCounter : INTEGER RANGE 0 TO 50000000 := 0;
+    SIGNAL steps : INTEGER RANGE 0 TO 50000000 := 2000;
 
 BEGIN
     PROCESS (clk)
     BEGIN
-        IF (rising_edge(clk) AND timeCounter = '1') THEN
+        IF (rising_edge(clk) AND timeCounter = '1' AND stepCounter < steps - 1) THEN
             CASE state IS
                 WHEN s0 =>
                     state <= s1;
@@ -48,6 +50,8 @@ BEGIN
                 WHEN OTHERS =>
                     state <= s0;
             END CASE;
+
+            stepCounter <= stepCounter + 1;
         END IF;
     END PROCESS;
 
