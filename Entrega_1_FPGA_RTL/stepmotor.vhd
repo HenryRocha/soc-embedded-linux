@@ -35,24 +35,16 @@ ARCHITECTURE rtl OF stepmotor IS
 BEGIN
     PROCESS (clk)
     BEGIN
-        IF (rising_edge(clk)) THEN
+        IF (rising_edge(clk) AND timeCounter = '1') THEN
             CASE state IS
                 WHEN s0 =>
-                    IF (timeCounter = '1') THEN
-                        state <= s1;
-                    END IF;
+                    state <= s1;
                 WHEN s1 =>
-                    IF (timeCounter = '1') THEN
-                        state <= s2;
-                    END IF;
+                    state <= s2;
                 WHEN s2 =>
-                    IF (timeCounter = '1') THEN
-                        state <= s3;
-                    END IF;
+                    state <= s3;
                 WHEN s3 =>
-                    IF (timeCounter = '1') THEN
-                        state <= s0;
-                    END IF;
+                    state <= s0;
                 WHEN OTHERS =>
                     state <= s0;
             END CASE;
