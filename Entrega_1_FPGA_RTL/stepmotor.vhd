@@ -9,6 +9,9 @@ LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 
 ENTITY stepmotor IS
+    GENERIC (
+        steps : INTEGER := 2000
+    );
     PORT (
         -- Globals
         clk : IN std_logic;
@@ -29,15 +32,14 @@ END ENTITY stepmotor;
 ARCHITECTURE rtl OF stepmotor IS
     TYPE STATE_TYPE IS (s0, s1, s2, s3);
     SIGNAL state : STATE_TYPE := s0;
-    SIGNAL timeCounter : std_logic := '0';
-    SIGNAL topCounter : INTEGER RANGE 0 TO 50000000;
-    SIGNAL stepCounter : INTEGER RANGE 0 TO 50000000 := 0;
-    SIGNAL steps : INTEGER RANGE 0 TO 50000000 := 2000;
+    SIGNAL stateChange : std_logic := '0';
+    SIGNAL velDelay : INTEGER RANGE 0 TO 50000000;
+    SIGNAL stepCounter : INTEGER RANGE 0 TO 50000000 := 1;
 
 BEGIN
     PROCESS (clk)
     BEGIN
-        IF (rising_edge(clk) AND timeCounter = '1' AND stepCounter < steps - 1) THEN
+        IF (rising_edge(clk) AND stateChange = '1' AND stepCounter <= steps) THEN
             CASE state IS
                 WHEN s0 =>
                     state <= s1;
@@ -90,33 +92,31 @@ BEGIN
     BEGIN
         CASE vel IS
             WHEN "00" =>
-                topCounter <= 400000;
+                velDelay <= 400000;
             WHEN "01" =>
-                topCounter <= 300000;
+                velDelay <= 300000;
             WHEN "10" =>
-                topCounter <= 200000;
+                velDelay <= 200000;
             WHEN "11" =>
                 -- Creates a delta time of 2ms between each phase change,
                 -- the minimium for the motor to work. This means that at this
                 -- speed, the motor is at it's fastest.
-                topCounter <= 100000;
+                velDelay <= 100000;
             WHEN OTHERS =>
-                topCounter <= 1000000;
+                velDelay <= 1000000;
         END CASE;
     END PROCESS;
 
     PROCESS (clk)
         VARIABLE counter : INTEGER RANGE 0 TO 50000000 := 0;
     BEGIN
-        IF (rising_edge(clk)) THEN
-            IF (en = '1') THEN
-                IF (counter < topCounter) THEN
-                    counter := counter + 1;
-                    timeCounter <= '0';
-                ELSE
-                    counter := 0;
-                    timeCounter <= '1';
-                END IF;
+        IF (rising_edge(clk) AND en = '1') THEN
+            IF (counter < velDelay) THEN
+                counter := counter + 1;
+                stateChange <= '0';
+            ELSE
+                counter := 0;
+                stateChange <= '1';
             END IF;
         END IF;
     END PROCESS;
