@@ -25,7 +25,7 @@ Rubrica
 - A
     - [ ] Aplica uma curva de aceleração na velocidade.
 - B
-    - [ ] Possuir número de passos a serem executados.
+    - [X] Possuir número de passos a serem executados.
 - C
     - [X] Aciona o motor de passos e possui um sinal de:
         - [X] EN (que liga e desliga o motor)
