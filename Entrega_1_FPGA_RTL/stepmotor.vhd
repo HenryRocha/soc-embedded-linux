@@ -10,7 +10,7 @@ USE IEEE.std_logic_1164.ALL;
 
 ENTITY stepmotor IS
     GENERIC (
-        steps : INTEGER := 2000
+        steps : INTEGER := 1000000
     );
     PORT (
         -- Globals
@@ -109,14 +109,25 @@ BEGIN
 
     PROCESS (clk)
         VARIABLE counter : INTEGER RANGE 0 TO 50000000 := 0;
+        VARIABLE delay : INTEGER RANGE 0 TO 50000000 := 0;
+        VARIABLE oldVelDelay : INTEGER RANGE 0 TO 50000000 := 0;
     BEGIN
         IF (rising_edge(clk) AND en = '1') THEN
-            IF (counter < velDelay) THEN
+            IF (oldVelDelay /= velDelay) THEN
+                delay := 2 * velDelay;
+                oldVelDelay := velDelay;
+            END IF;
+
+            IF (counter < delay) THEN
                 counter := counter + 1;
                 stateChange <= '0';
             ELSE
                 counter := 0;
                 stateChange <= '1';
+
+                IF (delay > velDelay + velDelay / 100 * 5) THEN
+                    delay := delay - velDelay / 100 * 5;
+                END IF;
             END IF;
         END IF;
     END PROCESS;
