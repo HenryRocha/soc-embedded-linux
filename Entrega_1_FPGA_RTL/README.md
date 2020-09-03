@@ -10,8 +10,8 @@ TODO
 
 ## Materiais
 
-Placa: FPGA DE10-Standard
-Motor: Rohs Step Motor 28BYJ-48
+- Placa: FPGA DE10-Standard
+- Motor: Rohs Step Motor 28BYJ-48
 
 ## Pinos usados e sua descrição
 
@@ -23,7 +23,7 @@ Motor: Rohs Step Motor 28BYJ-48
 
 Rubrica
 - A
-    - [ ] Aplica uma curva de aceleração na velocidade.
+    - [X] Aplica uma curva de aceleração na velocidade.
 - B
     - [X] Possuir número de passos a serem executados.
 - C
