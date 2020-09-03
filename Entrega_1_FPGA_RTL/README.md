@@ -32,6 +32,6 @@ Rubrica
         - [X] DIR (que controla a direção na qual o motor gira)
         - [X] VEL (quatro velocidades de rotação)
 - D
-    - [ ] Entregou o tutorial
+    - [X] Entregou o tutorial
 - I
     - [ ] Não entregou nada
