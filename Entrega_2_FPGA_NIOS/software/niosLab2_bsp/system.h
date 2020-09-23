@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'niosLab2'
  * SOPC Builder design path: ../../niosLab2.sopcinfo
  *
- * Generated: Wed Sep 23 17:04:04 BRT 2020
+ * Generated: Wed Sep 23 18:29:15 BRT 2020
  */
 
 /*
@@ -162,19 +162,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart_0"
-#define ALT_STDERR_BASE 0x81010
+#define ALT_STDERR_BASE 0x81030
 #define ALT_STDERR_DEV jtag_uart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart_0"
-#define ALT_STDIN_BASE 0x81010
+#define ALT_STDIN_BASE 0x81030
 #define ALT_STDIN_DEV jtag_uart_0
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart_0"
-#define ALT_STDOUT_BASE 0x81010
+#define ALT_STDOUT_BASE 0x81030
 #define ALT_STDOUT_DEV jtag_uart_0
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -199,7 +199,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
-#define JTAG_UART_0_BASE 0x81010
+#define JTAG_UART_0_BASE 0x81030
 #define JTAG_UART_0_IRQ -1
 #define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
@@ -246,7 +246,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_0 altera_avalon_pio
-#define PIO_0_BASE 0x81000
+#define PIO_0_BASE 0x81020
 #define PIO_0_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_0_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_0_CAPTURE 0
@@ -265,5 +265,59 @@
 #define PIO_0_RESET_VALUE 0
 #define PIO_0_SPAN 16
 #define PIO_0_TYPE "altera_avalon_pio"
+
+
+/*
+ * pio_1 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_pio_1 altera_avalon_pio
+#define PIO_1_BASE 0x81010
+#define PIO_1_BIT_CLEARING_EDGE_REGISTER 0
+#define PIO_1_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define PIO_1_CAPTURE 0
+#define PIO_1_DATA_WIDTH 10
+#define PIO_1_DO_TEST_BENCH_WIRING 0
+#define PIO_1_DRIVEN_SIM_VALUE 0
+#define PIO_1_EDGE_TYPE "NONE"
+#define PIO_1_FREQ 50000000
+#define PIO_1_HAS_IN 1
+#define PIO_1_HAS_OUT 0
+#define PIO_1_HAS_TRI 0
+#define PIO_1_IRQ -1
+#define PIO_1_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PIO_1_IRQ_TYPE "NONE"
+#define PIO_1_NAME "/dev/pio_1"
+#define PIO_1_RESET_VALUE 0
+#define PIO_1_SPAN 16
+#define PIO_1_TYPE "altera_avalon_pio"
+
+
+/*
+ * pio_2 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_pio_2 altera_avalon_pio
+#define PIO_2_BASE 0x81000
+#define PIO_2_BIT_CLEARING_EDGE_REGISTER 0
+#define PIO_2_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define PIO_2_CAPTURE 0
+#define PIO_2_DATA_WIDTH 4
+#define PIO_2_DO_TEST_BENCH_WIRING 0
+#define PIO_2_DRIVEN_SIM_VALUE 0
+#define PIO_2_EDGE_TYPE "NONE"
+#define PIO_2_FREQ 50000000
+#define PIO_2_HAS_IN 0
+#define PIO_2_HAS_OUT 1
+#define PIO_2_HAS_TRI 0
+#define PIO_2_IRQ -1
+#define PIO_2_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PIO_2_IRQ_TYPE "NONE"
+#define PIO_2_NAME "/dev/pio_2"
+#define PIO_2_RESET_VALUE 0
+#define PIO_2_SPAN 16
+#define PIO_2_TYPE "altera_avalon_pio"
 
 #endif /* __SYSTEM_H_ */

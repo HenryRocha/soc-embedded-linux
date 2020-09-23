@@ -71,7 +71,7 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
  26 .jdi          00004e8b  00000000  00000000  00030d4d  2**0
                   CONTENTS, READONLY
- 27 .sopcinfo     00031f8f  00000000  00000000  00035bd8  2**0
+ 27 .sopcinfo     0003dbbf  00000000  00000000  00035bd8  2**0
                   CONTENTS, READONLY
 SYMBOL TABLE:
 00040000 l    d  .entry	00000000 .entry
@@ -493,7 +493,7 @@ int main(void){
    400e8:	00c00044 	movi	r3,1
    400ec:	1886983a 	sll	r3,r3,r2
    400f0:	00800234 	movhi	r2,8
-   400f4:	10840004 	addi	r2,r2,4096
+   400f4:	10840804 	addi	r2,r2,4128
    400f8:	10c00035 	stwio	r3,0(r2)
           usleep(50000);
    400fc:	0130d414 	movui	r4,50000
