@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Sep 23, 2020 6:29:15 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1600896555397</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Sep 23, 2020 8:03:56 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1600902236453</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>/home/labarqcomp/Repos/soc-embedded-linux/Entrega_2_FPGA_NIOS/software/niosLab2_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../niosLab2.sopcinfo</SopcDesignFile>
@@ -878,7 +878,7 @@
                 <SettingName>altera_avalon_jtag_uart_driver.enable_small_driver</SettingName>
                 <Identifier>ALTERA_AVALON_JTAG_UART_SMALL</Identifier>
                 <Type>BooleanDefineOnly</Type>
-                <Value>true</Value>
+                <Value>false</Value>
                 <DefaultValue>false</DefaultValue>
                 <DestinationFile>public_mk_define</DestinationFile>
                 <Description>Small-footprint (polled mode) driver</Description>
@@ -905,26 +905,32 @@
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>onchip_memory2_1</slaveDescriptor>
+                <addressRange>0x00080000 - 0x0009F3FF</addressRange>
+                <addressSpan>128000</addressSpan>
+                <attributes>memory</attributes>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>pio_2</slaveDescriptor>
-                <addressRange>0x00081000 - 0x0008100F</addressRange>
+                <addressRange>0x000A1000 - 0x000A100F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>pio_1</slaveDescriptor>
-                <addressRange>0x00081010 - 0x0008101F</addressRange>
+                <addressRange>0x000A1010 - 0x000A101F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>pio_0</slaveDescriptor>
-                <addressRange>0x00081020 - 0x0008102F</addressRange>
+                <addressRange>0x000A1020 - 0x000A102F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x00081030 - 0x00081037</addressRange>
+                <addressRange>0x000A1030 - 0x000A1037</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
@@ -934,22 +940,22 @@
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.rodata</sectionName>
-                <regionName>onchip_memory2_0</regionName>
+                <regionName>onchip_memory2_1</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.rwdata</sectionName>
-                <regionName>onchip_memory2_0</regionName>
+                <regionName>onchip_memory2_1</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.bss</sectionName>
-                <regionName>onchip_memory2_0</regionName>
+                <regionName>onchip_memory2_1</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.heap</sectionName>
-                <regionName>onchip_memory2_0</regionName>
+                <regionName>onchip_memory2_1</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.stack</sectionName>
-                <regionName>onchip_memory2_0</regionName>
+                <regionName>onchip_memory2_1</regionName>
         </LinkerSection>
 </sch:Settings>

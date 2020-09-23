@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'niosLab2'
  * SOPC Builder design path: ../../niosLab2.sopcinfo
  *
- * Generated: Wed Sep 23 18:29:15 BRT 2020
+ * Generated: Wed Sep 23 18:55:25 BRT 2020
  */
 
 /*
@@ -62,7 +62,7 @@
 
 #define ALT_CPU_ARCHITECTURE "altera_nios2_gen2"
 #define ALT_CPU_BIG_ENDIAN 0
-#define ALT_CPU_BREAK_ADDR 0x00080820
+#define ALT_CPU_BREAK_ADDR 0x000a0820
 #define ALT_CPU_CPU_ARCH_NIOS2_R1
 #define ALT_CPU_CPU_FREQ 50000000u
 #define ALT_CPU_CPU_ID_SIZE 1
@@ -103,7 +103,7 @@
  */
 
 #define NIOS2_BIG_ENDIAN 0
-#define NIOS2_BREAK_ADDR 0x00080820
+#define NIOS2_BREAK_ADDR 0x000a0820
 #define NIOS2_CPU_ARCH_NIOS2_R1
 #define NIOS2_CPU_FREQ 50000000u
 #define NIOS2_CPU_ID_SIZE 1
@@ -153,6 +153,7 @@
  */
 
 #define ALT_DEVICE_FAMILY "Cyclone V"
+#define ALT_ENHANCED_INTERRUPT_API_PRESENT
 #define ALT_IRQ_BASE NULL
 #define ALT_LOG_PORT "/dev/null"
 #define ALT_LOG_PORT_BASE 0x0
@@ -162,19 +163,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart_0"
-#define ALT_STDERR_BASE 0x81030
+#define ALT_STDERR_BASE 0xa1030
 #define ALT_STDERR_DEV jtag_uart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart_0"
-#define ALT_STDIN_BASE 0x81030
+#define ALT_STDIN_BASE 0xa1030
 #define ALT_STDIN_DEV jtag_uart_0
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart_0"
-#define ALT_STDOUT_BASE 0x81030
+#define ALT_STDOUT_BASE 0xa1030
 #define ALT_STDOUT_DEV jtag_uart_0
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -199,9 +200,9 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
-#define JTAG_UART_0_BASE 0x81030
-#define JTAG_UART_0_IRQ -1
-#define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define JTAG_UART_0_BASE 0xa1030
+#define JTAG_UART_0_IRQ 0
+#define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
 #define JTAG_UART_0_READ_DEPTH 64
 #define JTAG_UART_0_READ_THRESHOLD 8
@@ -241,12 +242,41 @@
 
 
 /*
+ * onchip_memory2_1 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_onchip_memory2_1 altera_avalon_onchip_memory2
+#define ONCHIP_MEMORY2_1_ALLOW_IN_SYSTEM_MEMORY_CONTENT_EDITOR 0
+#define ONCHIP_MEMORY2_1_ALLOW_MRAM_SIM_CONTENTS_ONLY_FILE 0
+#define ONCHIP_MEMORY2_1_BASE 0x80000
+#define ONCHIP_MEMORY2_1_CONTENTS_INFO ""
+#define ONCHIP_MEMORY2_1_DUAL_PORT 0
+#define ONCHIP_MEMORY2_1_GUI_RAM_BLOCK_TYPE "AUTO"
+#define ONCHIP_MEMORY2_1_INIT_CONTENTS_FILE "niosLab2_onchip_memory2_1"
+#define ONCHIP_MEMORY2_1_INIT_MEM_CONTENT 1
+#define ONCHIP_MEMORY2_1_INSTANCE_ID "NONE"
+#define ONCHIP_MEMORY2_1_IRQ -1
+#define ONCHIP_MEMORY2_1_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define ONCHIP_MEMORY2_1_NAME "/dev/onchip_memory2_1"
+#define ONCHIP_MEMORY2_1_NON_DEFAULT_INIT_FILE_ENABLED 0
+#define ONCHIP_MEMORY2_1_RAM_BLOCK_TYPE "AUTO"
+#define ONCHIP_MEMORY2_1_READ_DURING_WRITE_MODE "DONT_CARE"
+#define ONCHIP_MEMORY2_1_SINGLE_CLOCK_OP 0
+#define ONCHIP_MEMORY2_1_SIZE_MULTIPLE 1
+#define ONCHIP_MEMORY2_1_SIZE_VALUE 128000
+#define ONCHIP_MEMORY2_1_SPAN 128000
+#define ONCHIP_MEMORY2_1_TYPE "altera_avalon_onchip_memory2"
+#define ONCHIP_MEMORY2_1_WRITABLE 1
+
+
+/*
  * pio_0 configuration
  *
  */
 
 #define ALT_MODULE_CLASS_pio_0 altera_avalon_pio
-#define PIO_0_BASE 0x81020
+#define PIO_0_BASE 0xa1020
 #define PIO_0_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_0_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_0_CAPTURE 0
@@ -273,21 +303,21 @@
  */
 
 #define ALT_MODULE_CLASS_pio_1 altera_avalon_pio
-#define PIO_1_BASE 0x81010
+#define PIO_1_BASE 0xa1010
 #define PIO_1_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_1_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define PIO_1_CAPTURE 0
+#define PIO_1_CAPTURE 1
 #define PIO_1_DATA_WIDTH 10
 #define PIO_1_DO_TEST_BENCH_WIRING 0
 #define PIO_1_DRIVEN_SIM_VALUE 0
-#define PIO_1_EDGE_TYPE "NONE"
+#define PIO_1_EDGE_TYPE "ANY"
 #define PIO_1_FREQ 50000000
 #define PIO_1_HAS_IN 1
 #define PIO_1_HAS_OUT 0
 #define PIO_1_HAS_TRI 0
-#define PIO_1_IRQ -1
-#define PIO_1_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define PIO_1_IRQ_TYPE "NONE"
+#define PIO_1_IRQ 1
+#define PIO_1_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define PIO_1_IRQ_TYPE "EDGE"
 #define PIO_1_NAME "/dev/pio_1"
 #define PIO_1_RESET_VALUE 0
 #define PIO_1_SPAN 16
@@ -300,7 +330,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_2 altera_avalon_pio
-#define PIO_2_BASE 0x81000
+#define PIO_2_BASE 0xa1000
 #define PIO_2_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_2_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_2_CAPTURE 0

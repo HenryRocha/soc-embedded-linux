@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'niosLab2'
 # SOPC Builder design path: ../../niosLab2.sopcinfo
 #
-# Generated: Wed Sep 23 17:04:04 BRT 2020
+# Generated: Wed Sep 23 18:55:25 BRT 2020
 
 # DO NOT MODIFY THIS FILE
 #
@@ -48,3 +48,6 @@
 
 # onchip_memory2_0
 memory 0x40000 0x68000 cache
+
+# onchip_memory2_1
+memory 0x80000 0x9f400 cache

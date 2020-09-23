@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'niosLab2'
  * SOPC Builder design path: ../../niosLab2.sopcinfo
  *
- * Generated: Wed Sep 23 17:04:04 BRT 2020
+ * Generated: Wed Sep 23 20:03:56 BRT 2020
  */
 
 /*
@@ -52,10 +52,12 @@ MEMORY
 {
     reset : ORIGIN = 0x40000, LENGTH = 32
     onchip_memory2_0 : ORIGIN = 0x40020, LENGTH = 163808
+    onchip_memory2_1 : ORIGIN = 0x80000, LENGTH = 128000
 }
 
 /* Define symbols for each memory base-address */
 __alt_mem_onchip_memory2_0 = 0x40000;
+__alt_mem_onchip_memory2_1 = 0x80000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -217,7 +219,7 @@ SECTIONS
         *(.rodata1)
         . = ALIGN(4);
         PROVIDE (__ram_rodata_end = ABSOLUTE(.));
-    } > onchip_memory2_0
+    } > onchip_memory2_1
 
     PROVIDE (__flash_rodata_start = LOADADDR(.rodata));
 
@@ -226,13 +228,9 @@ SECTIONS
      * This section's LMA is set to the .text region.
      * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
      *
-     * .rwdata region equals the .text region, and is set to be loaded into .text region.
-     * This requires two copies of .rwdata in the .text region. One read writable at VMA.
-     * and one read-only at LMA. crt0 will copy from LMA to VMA on reset
-     *
      */
 
-    .rwdata LOADADDR (.rodata) + SIZEOF (.rodata) : AT ( LOADADDR (.rodata) + SIZEOF (.rodata)+ SIZEOF (.rwdata) )
+    .rwdata : AT ( LOADADDR (.text) + SIZEOF (.text) )
     {
         PROVIDE (__ram_rwdata_start = ABSOLUTE(.));
         . = ALIGN(4);
@@ -251,18 +249,11 @@ SECTIONS
         _edata = ABSOLUTE(.);
         PROVIDE (edata = ABSOLUTE(.));
         PROVIDE (__ram_rwdata_end = ABSOLUTE(.));
-    } > onchip_memory2_0
+    } > onchip_memory2_1
 
     PROVIDE (__flash_rwdata_start = LOADADDR(.rwdata));
 
-    /*
-     *
-     * This section's LMA is set to the .text region.
-     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
-     *
-     */
-
-    .bss LOADADDR (.rwdata) + SIZEOF (.rwdata) : AT ( LOADADDR (.rwdata) + SIZEOF (.rwdata) )
+    .bss :
     {
         __bss_start = ABSOLUTE(.);
         PROVIDE (__sbss_start = ABSOLUTE(.));
@@ -282,7 +273,7 @@ SECTIONS
 
         . = ALIGN(4);
         __bss_end = ABSOLUTE(.);
-    } > onchip_memory2_0
+    } > onchip_memory2_1
 
     /*
      *
@@ -307,18 +298,35 @@ SECTIONS
      *
      */
 
-    .onchip_memory2_0 LOADADDR (.bss) + SIZEOF (.bss) : AT ( LOADADDR (.bss) + SIZEOF (.bss) )
+    .onchip_memory2_0 LOADADDR (.rwdata) + SIZEOF (.rwdata) : AT ( LOADADDR (.rwdata) + SIZEOF (.rwdata) )
     {
         PROVIDE (_alt_partition_onchip_memory2_0_start = ABSOLUTE(.));
         *(.onchip_memory2_0 .onchip_memory2_0. onchip_memory2_0.*)
         . = ALIGN(4);
         PROVIDE (_alt_partition_onchip_memory2_0_end = ABSOLUTE(.));
-        _end = ABSOLUTE(.);
-        end = ABSOLUTE(.);
-        __alt_stack_base = ABSOLUTE(.);
     } > onchip_memory2_0
 
     PROVIDE (_alt_partition_onchip_memory2_0_load_addr = LOADADDR(.onchip_memory2_0));
+
+    /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .onchip_memory2_1 : AT ( LOADADDR (.onchip_memory2_0) + SIZEOF (.onchip_memory2_0) )
+    {
+        PROVIDE (_alt_partition_onchip_memory2_1_start = ABSOLUTE(.));
+        *(.onchip_memory2_1 .onchip_memory2_1. onchip_memory2_1.*)
+        . = ALIGN(4);
+        PROVIDE (_alt_partition_onchip_memory2_1_end = ABSOLUTE(.));
+        _end = ABSOLUTE(.);
+        end = ABSOLUTE(.);
+        __alt_stack_base = ABSOLUTE(.);
+    } > onchip_memory2_1
+
+    PROVIDE (_alt_partition_onchip_memory2_1_load_addr = LOADADDR(.onchip_memory2_1));
 
     /*
      * Stabs debugging sections.
@@ -367,7 +375,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x68000;
+__alt_data_end = 0x9f400;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -383,4 +391,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x68000 );
+PROVIDE( __alt_heap_limit    = 0x9f400 );
