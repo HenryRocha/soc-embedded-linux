@@ -61,14 +61,37 @@ void handle_button_interrupts(void *context, alt_u32 id)
     // bit 3 -> 8
     *edge_capture_ptr = IORD_ALTERA_AVALON_PIO_EDGE_CAP(PIO_1_BASE);
 
-    // Verifica qual foi o bit que mudou.
-    if (*edge_capture_ptr & 1)
-        on = !on;
-    if (*edge_capture_ptr & 2)
-        dir = !dir;
-
     // Pega o valor numerico dos switches.
     sw = IORD_ALTERA_AVALON_PIO_DATA(PIO_1_BASE);
+
+    // Pega o bit 0 dos sws
+    char swOn = (sw >> 0) & 1;
+    if (swOn)
+    {
+        printf("On 1\n");
+        on = 1;
+    }
+    else
+    {
+        printf("On 0\n");
+        on = 0;
+    }
+
+    // Pega o bit 1 dos sws
+    int swDir = (sw >> 1) & 1;
+    if (swDir)
+    {
+        printf("Dir 1\n");
+        dir = 1;
+    }
+    else
+    {
+        printf("Dir 0\n");
+        dir = 0;
+    }
+
+    // Exclui os 2 primeiros bits dos sws
+    // o resto representa a velocidade.
     vel = (sw >> 0x02);
 
     /* Reset the Button's edge capture register. */
