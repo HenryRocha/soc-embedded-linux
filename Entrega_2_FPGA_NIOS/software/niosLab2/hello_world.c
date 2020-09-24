@@ -64,35 +64,19 @@ void handle_button_interrupts(void *context, alt_u32 id)
     // Pega o valor numerico dos switches.
     sw = IORD_ALTERA_AVALON_PIO_DATA(PIO_1_BASE);
 
-    // Pega o bit 0 dos sws
+    // Pega o bit 0 dos sws.
     char swOn = (sw >> 0) & 1;
-    if (swOn)
-    {
-        printf("On 1\n");
-        on = 1;
-    }
-    else
-    {
-        printf("On 0\n");
-        on = 0;
-    }
+    on = swOn;
+    printf("On %d\n", swOn);
 
-    // Pega o bit 1 dos sws
+    // Pega o bit 1 dos sws.
     int swDir = (sw >> 1) & 1;
-    if (swDir)
-    {
-        printf("Dir 1\n");
-        dir = 1;
-    }
-    else
-    {
-        printf("Dir 0\n");
-        dir = 0;
-    }
+    dir = swDir;
+    printf("Dir %d\n", swDir);
 
-    // Exclui os 2 primeiros bits dos sws
-    // o resto representa a velocidade.
-    vel = (sw >> 0x02);
+    // Usa dos bits 2 e 3 para calcular a velocidade.
+    vel = ((sw >> 2) & 1) * 1 + ((sw >> 3) & 1) * 2;
+    printf("Vel %d\n", vel);
 
     /* Reset the Button's edge capture register. */
     IOWR_ALTERA_AVALON_PIO_EDGE_CAP(PIO_1_BASE, 0);
@@ -145,8 +129,11 @@ int main(void)
 
             if (led <= 5)
             {
-                IOWR_32DIRECT(PIO_0_BASE, 0, 0x01 << led++);
-                usleep(50000);
+                if (dir)
+                    IOWR_32DIRECT(PIO_0_BASE, 0, 0x08 >> led++);
+                else
+                    IOWR_32DIRECT(PIO_0_BASE, 0, 0x01 << led++);
+                usleep(sleep / (vel + 1));
             }
             else
             {
