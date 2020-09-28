@@ -13,19 +13,20 @@ end entity LAB2_FPGA_NIOS;
 
 architecture rtl of LAB2_FPGA_NIOS is
 
-component niosLab2 is port (
-  clk_clk       : in  std_logic                    := 'X'; -- clk
-  reset_reset_n : in  std_logic                    := 'X'; -- reset_n
-  leds_export   : out std_logic_vector(5 downto 0)         -- export
-);
-end component niosLab2;
+component niosLab2 is
+        port (
+            clk_clk       : in  std_logic                    := 'X'; -- clk
+            leds_name     : out std_logic_vector(3 downto 0);        -- name
+            reset_reset_n : in  std_logic                    := 'X'  -- reset_n
+        );
+    end component niosLab2;
 
 begin
 
 u0 : component niosLab2 port map (
   clk_clk       => fpga_clk_50,    --  clk.clk
   reset_reset_n => '1',            --  reset.reset_n
-  leds_export   => fpga_led_pio    --  leds.export
+  leds_name   => fpga_led_pio(3 downto 0)    --  leds.export
 );
 
 end rtl;
