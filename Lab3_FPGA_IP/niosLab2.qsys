@@ -49,38 +49,6 @@
          type = "String";
       }
    }
-   element niosLab2
-   {
-      datum _originalDeviceFamily
-      {
-         value = "Cyclone V";
-         type = "String";
-      }
-   }
-   element niosLab2
-   {
-      datum _originalDeviceFamily
-      {
-         value = "Cyclone V";
-         type = "String";
-      }
-   }
-   element niosLab2
-   {
-      datum _originalDeviceFamily
-      {
-         value = "Cyclone V";
-         type = "String";
-      }
-   }
-   element niosLab2
-   {
-      datum _originalDeviceFamily
-      {
-         value = "Cyclone V";
-         type = "String";
-      }
-   }
    element onchip_memory2_0
    {
       datum _sortIndex
@@ -95,14 +63,6 @@
       {
          value = "32768";
          type = "String";
-      }
-   }
-   element peripheral_LED_0
-   {
-      datum _sortIndex
-      {
-         value = "5";
-         type = "int";
       }
    }
    element pio_0
@@ -198,7 +158,7 @@
   <parameter name="dataAddrWidth" value="17" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='peripheral_LED_0.avalon_slave_0' start='0x0' end='0x40' type='peripheral_LED.avalon_slave_0' /><slave name='onchip_memory2_0.s1' start='0x8000' end='0xFD00' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x10800' end='0x11000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='pio_0.s1' start='0x11000' end='0x11010' type='altera_avalon_pio.s1' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x11010' end='0x11018' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x8000' end='0xFD00' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x10800' end='0x11000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='pio_0.s1' start='0x11000' end='0x11010' type='altera_avalon_pio.s1' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x11010' end='0x11018' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -388,13 +348,6 @@
   <parameter name="useShallowMemBlocks" value="false" />
   <parameter name="writable" value="true" />
  </module>
- <module
-   name="peripheral_LED_0"
-   kind="peripheral_LED"
-   version="0.1"
-   enabled="1">
-  <parameter name="LEN" value="4" />
- </module>
  <module name="pio_0" kind="altera_avalon_pio" version="18.1" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
@@ -416,15 +369,6 @@
    end="jtag_uart_0.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x00011010" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="18.1"
-   start="nios2_gen2_0.data_master"
-   end="peripheral_LED_0.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -481,11 +425,6 @@
    start="clk_0.clk"
    end="onchip_memory2_0.clk1" />
  <connection
-   kind="clock"
-   version="18.1"
-   start="clk_0.clk"
-   end="peripheral_LED_0.clock" />
- <connection
    kind="reset"
    version="18.1"
    start="clk_0.clk_reset"
@@ -496,11 +435,6 @@
    version="18.1"
    start="clk_0.clk_reset"
    end="nios2_gen2_0.reset" />
- <connection
-   kind="reset"
-   version="18.1"
-   start="clk_0.clk_reset"
-   end="peripheral_LED_0.reset" />
  <connection
    kind="reset"
    version="18.1"

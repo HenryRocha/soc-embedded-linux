@@ -79,8 +79,12 @@ set_location_assignment PIN_AC28 -to fpga_switch[6]
 set_location_assignment PIN_AD30 -to fpga_switch[7]
 set_location_assignment PIN_AC29 -to fpga_switch[8]
 set_location_assignment PIN_AA30 -to fpga_switch[9]
+set_global_assignment -name QIP_FILE niosLab2/synthesis/niosLab2.qip
+set_global_assignment -name VHDL_FILE lab1_fpga_rtl.vhd
+set_global_assignment -name SDC_FILE lab1_fpga_rtl.sdc
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE lab2_fpga_nios.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -110,9 +114,3 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fpga_switch[7]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fpga_switch[8]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fpga_switch[9]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VHDL_FILE IP/peripheral_LED.vhd
-set_global_assignment -name QIP_FILE niosLab2/synthesis/niosLab2.qip
-set_global_assignment -name VHDL_FILE lab1_fpga_rtl.vhd
-set_global_assignment -name SDC_FILE lab1_fpga_rtl.sdc
-set_global_assignment -name VHDL_FILE lab2_fpga_nios.vhd
-set_global_assignment -name IP_SEARCH_PATHS "/home/labarqcomp/Repos/soc-embedded-linux/Lab3_FPGA_IP/IP"
