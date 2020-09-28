@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Sep 28, 2020 7:08:27 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1601330907059</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Sep 28, 2020 8:45:53 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1601336753192</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>/home/labarqcomp/Repos/soc-embedded-linux/Lab3_FPGA_IP/software/niosLab2_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../niosLab2.sopcinfo</SopcDesignFile>
@@ -905,14 +905,14 @@
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_0</slaveDescriptor>
-                <addressRange>0x00011000 - 0x0001100F</addressRange>
-                <addressSpan>16</addressSpan>
+                <slaveDescriptor>peripheral_LED_0</slaveDescriptor>
+                <addressRange>0x00011000 - 0x0001103F</addressRange>
+                <addressSpan>64</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x00011010 - 0x00011017</addressRange>
+                <addressRange>0x00011040 - 0x00011047</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

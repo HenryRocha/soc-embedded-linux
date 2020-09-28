@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'niosLab2'
  * SOPC Builder design path: ../../niosLab2.sopcinfo
  *
- * Generated: Wed Sep 09 19:22:59 BRT 2020
+ * Generated: Mon Sep 28 20:45:53 BRT 2020
  */
 
 /*
@@ -143,8 +143,8 @@
 
 #define __ALTERA_AVALON_JTAG_UART
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
-#define __ALTERA_AVALON_PIO
 #define __ALTERA_NIOS2_GEN2
+#define __PERIPHERAL_LED
 
 
 /*
@@ -162,19 +162,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart_0"
-#define ALT_STDERR_BASE 0x11010
+#define ALT_STDERR_BASE 0x11040
 #define ALT_STDERR_DEV jtag_uart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart_0"
-#define ALT_STDIN_BASE 0x11010
+#define ALT_STDIN_BASE 0x11040
 #define ALT_STDIN_DEV jtag_uart_0
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart_0"
-#define ALT_STDOUT_BASE 0x11010
+#define ALT_STDOUT_BASE 0x11040
 #define ALT_STDOUT_DEV jtag_uart_0
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -199,7 +199,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
-#define JTAG_UART_0_BASE 0x11010
+#define JTAG_UART_0_BASE 0x11040
 #define JTAG_UART_0_IRQ -1
 #define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
@@ -241,29 +241,16 @@
 
 
 /*
- * pio_0 configuration
+ * peripheral_LED_0 configuration
  *
  */
 
-#define ALT_MODULE_CLASS_pio_0 altera_avalon_pio
-#define PIO_0_BASE 0x11000
-#define PIO_0_BIT_CLEARING_EDGE_REGISTER 0
-#define PIO_0_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define PIO_0_CAPTURE 0
-#define PIO_0_DATA_WIDTH 8
-#define PIO_0_DO_TEST_BENCH_WIRING 0
-#define PIO_0_DRIVEN_SIM_VALUE 0
-#define PIO_0_EDGE_TYPE "NONE"
-#define PIO_0_FREQ 50000000
-#define PIO_0_HAS_IN 0
-#define PIO_0_HAS_OUT 1
-#define PIO_0_HAS_TRI 0
-#define PIO_0_IRQ -1
-#define PIO_0_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define PIO_0_IRQ_TYPE "NONE"
-#define PIO_0_NAME "/dev/pio_0"
-#define PIO_0_RESET_VALUE 0
-#define PIO_0_SPAN 16
-#define PIO_0_TYPE "altera_avalon_pio"
+#define ALT_MODULE_CLASS_peripheral_LED_0 peripheral_LED
+#define PERIPHERAL_LED_0_BASE 0x11000
+#define PERIPHERAL_LED_0_IRQ -1
+#define PERIPHERAL_LED_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PERIPHERAL_LED_0_NAME "/dev/peripheral_LED_0"
+#define PERIPHERAL_LED_0_SPAN 64
+#define PERIPHERAL_LED_0_TYPE "peripheral_LED"
 
 #endif /* __SYSTEM_H_ */
