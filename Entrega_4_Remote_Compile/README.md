@@ -18,7 +18,7 @@ TODO
 ## Rúbrica
 
 - A
-  - [ ] Debuga um programar no target (via gdbserver)
+  - [X] Debuga um programar no target (via gdbserver)
 - B
   - [X] Via Makefile consegue executar o binário no target
         - make run / make deploy
