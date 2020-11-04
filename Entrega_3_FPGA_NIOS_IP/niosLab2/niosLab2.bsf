@@ -54,8 +54,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 152)
 		(output)
-		(text "motor_export[3..0]" (rect 0 0 74 12)(font "Arial" (font_size 8)))
-		(text "motor_export[3..0]" (rect 4 141 112 152)(font "Arial" (font_size 8)))
+		(text "motor_motor[3..0]" (rect 0 0 73 12)(font "Arial" (font_size 8)))
+		(text "motor_motor[3..0]" (rect 4 141 106 152)(font "Arial" (font_size 8)))
 		(line (pt 0 152)(pt 128 152)(line_width 3))
 	)
 	(drawing
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 		(text "leds" (rect 105 83 234 179)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "export" (rect 133 107 302 224)(font "Arial" (color 0 0 0)))
 		(text "motor" (rect 95 123 220 259)(font "Arial" (color 128 0 0)(font_size 9)))
-		(text "export" (rect 133 147 302 304)(font "Arial" (color 0 0 0)))
+		(text "motor" (rect 133 147 296 304)(font "Arial" (color 0 0 0)))
 		(text "reset" (rect 99 163 228 339)(font "Arial" (color 128 0 0)(font_size 9)))
 		(text "reset_n" (rect 133 187 308 384)(font "Arial" (color 0 0 0)))
 		(text "switches" (rect 78 203 204 419)(font "Arial" (color 128 0 0)(font_size 9)))

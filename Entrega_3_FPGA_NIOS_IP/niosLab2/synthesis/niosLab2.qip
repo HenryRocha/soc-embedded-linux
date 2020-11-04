@@ -2,7 +2,7 @@ set_global_assignment -entity "niosLab2" -library "niosLab2" -name IP_TOOL_NAME 
 set_global_assignment -entity "niosLab2" -library "niosLab2" -name IP_TOOL_VERSION "18.1"
 set_global_assignment -entity "niosLab2" -library "niosLab2" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "niosLab2" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../niosLab2.sopcinfo"]
-set_global_assignment -entity "niosLab2" -library "niosLab2" -name SLD_INFO "QSYS_NAME niosLab2 HAS_SOPCINFO 1 GENERATION_ID 1600897452"
+set_global_assignment -entity "niosLab2" -library "niosLab2" -name SLD_INFO "QSYS_NAME niosLab2 HAS_SOPCINFO 1 GENERATION_ID 1604521810"
 set_global_assignment -library "niosLab2" -name MISC_FILE [file join $::quartus(qip_path) "../niosLab2.cmp"]
 set_global_assignment -library "niosLab2" -name SLD_FILE [file join $::quartus(qip_path) "niosLab2.regmap"]
 set_global_assignment -library "niosLab2" -name SLD_FILE [file join $::quartus(qip_path) "niosLab2.debuginfo"]
@@ -16,7 +16,7 @@ set_global_assignment -entity "niosLab2" -library "niosLab2" -name IP_COMPONENT_
 set_global_assignment -entity "niosLab2" -library "niosLab2" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "niosLab2" -library "niosLab2" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "niosLab2" -library "niosLab2" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "niosLab2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTYwMDg5NzQ1Mg==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "niosLab2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTYwNDUyMTgxMA==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "niosLab2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "niosLab2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNTWEZDNkQ2RjMxQzY=::QXV0byBERVZJQ0U="
 set_global_assignment -entity "niosLab2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Nl9INg==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
@@ -152,20 +152,20 @@ set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_mux" -library "nio
 set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_mux" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVJCSVRSQVRJT05fU0NIRU1F::bm8tYXJi::QXJiaXRyYXRpb24gc2NoZW1l"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_mux" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVJCSVRSQVRJT05fU0hBUkVT::MSwxLDEsMSwxLDEsMQ==::QXJiaXRyYXRpb24gc2hhcmVz"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_mux" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TUVSTElOX1BBQ0tFVF9GT1JNQVQ=::b3JpX2J1cnN0X3NpemUoOTU6OTMpIHJlc3BvbnNlX3N0YXR1cyg5Mjo5MSkgY2FjaGUoOTA6ODcpIHByb3RlY3Rpb24oODY6ODQpIHRocmVhZF9pZCg4MykgZGVzdF9pZCg4Mjo4MCkgc3JjX2lkKDc5Ojc3KSBxb3MoNzYpIGJlZ2luX2J1cnN0KDc1KSBkYXRhX3NpZGViYW5kKDc0KSBhZGRyX3NpZGViYW5kKDczKSBidXJzdF90eXBlKDcyOjcxKSBidXJzdF9zaXplKDcwOjY4KSBidXJzdHdyYXAoNjc6NjUpIGJ5dGVfY250KDY0OjYyKSB0cmFuc19leGNsdXNpdmUoNjEpIHRyYW5zX2xvY2soNjApIHRyYW5zX3JlYWQoNTkpIHRyYW5zX3dyaXRlKDU4KSB0cmFuc19wb3N0ZWQoNTcpIHRyYW5zX2NvbXByZXNzZWRfcmVhZCg1NikgYWRkcig1NTozNikgYnl0ZWVuKDM1OjMyKSBkYXRhKDMxOjAp::TWVybGluIHBhY2tldCBmb3JtYXQgZGVzY3JpcHRvcg=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_COMPONENT_NAME "bmlvc0xhYjJfbW1faW50ZXJjb25uZWN0XzBfcnNwX2RlbXV4XzAwMQ=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_COMPONENT_DISPLAY_NAME "TWVtb3J5IE1hcHBlZCBEZW11bHRpcGxleGVy"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_COMPONENT_INTERNAL "Off"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_COMPONENT_VERSION "MTguMQ=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_COMPONENT_DESCRIPTION "QWNjZXB0cyBjaGFubmVsaXplZCBkYXRhIG9uIGl0cyBzaW5rIGludGVyZmFjZSBhbmQgdHJhbnNtaXRzIHRoZSBkYXRhIG9uIG9uZSBvZiBpdHMgc291cmNlIGludGVyZmFjZXMu"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RfREFUQV9X::OTY=::UGFja2V0IGRhdGEgd2lkdGg="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RfQ0hBTk5FTF9X::Nw==::U3RyZWFtaW5nIGNoYW5uZWwgd2lkdGg="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TlVNX09VVFBVVFM=::Mg==::TnVtYmVyIG9mIGRlbXV4IG91dHB1dHM="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "VkFMSURfV0lEVEg=::MQ==::VmFsaWQgd2lkdGg="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TUVSTElOX1BBQ0tFVF9GT1JNQVQ=::b3JpX2J1cnN0X3NpemUoOTU6OTMpIHJlc3BvbnNlX3N0YXR1cyg5Mjo5MSkgY2FjaGUoOTA6ODcpIHByb3RlY3Rpb24oODY6ODQpIHRocmVhZF9pZCg4MykgZGVzdF9pZCg4Mjo4MCkgc3JjX2lkKDc5Ojc3KSBxb3MoNzYpIGJlZ2luX2J1cnN0KDc1KSBkYXRhX3NpZGViYW5kKDc0KSBhZGRyX3NpZGViYW5kKDczKSBidXJzdF90eXBlKDcyOjcxKSBidXJzdF9zaXplKDcwOjY4KSBidXJzdHdyYXAoNjc6NjUpIGJ5dGVfY250KDY0OjYyKSB0cmFuc19leGNsdXNpdmUoNjEpIHRyYW5zX2xvY2soNjApIHRyYW5zX3JlYWQoNTkpIHRyYW5zX3dyaXRlKDU4KSB0cmFuc19wb3N0ZWQoNTcpIHRyYW5zX2NvbXByZXNzZWRfcmVhZCg1NikgYWRkcig1NTozNikgYnl0ZWVuKDM1OjMyKSBkYXRhKDMxOjAp::TWVybGluIHBhY2tldCBmb3JtYXQgZGVzY3JpcHRvcg=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfUkFURQ==::NTAwMDAwMDA=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_COMPONENT_NAME "bmlvc0xhYjJfbW1faW50ZXJjb25uZWN0XzBfcnNwX2RlbXV4XzAwMg=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_COMPONENT_DISPLAY_NAME "TWVtb3J5IE1hcHBlZCBEZW11bHRpcGxleGVy"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_COMPONENT_VERSION "MTguMQ=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_COMPONENT_DESCRIPTION "QWNjZXB0cyBjaGFubmVsaXplZCBkYXRhIG9uIGl0cyBzaW5rIGludGVyZmFjZSBhbmQgdHJhbnNtaXRzIHRoZSBkYXRhIG9uIG9uZSBvZiBpdHMgc291cmNlIGludGVyZmFjZXMu"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RfREFUQV9X::OTY=::UGFja2V0IGRhdGEgd2lkdGg="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RfQ0hBTk5FTF9X::Nw==::U3RyZWFtaW5nIGNoYW5uZWwgd2lkdGg="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TlVNX09VVFBVVFM=::Mg==::TnVtYmVyIG9mIGRlbXV4IG91dHB1dHM="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "VkFMSURfV0lEVEg=::MQ==::VmFsaWQgd2lkdGg="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TUVSTElOX1BBQ0tFVF9GT1JNQVQ=::b3JpX2J1cnN0X3NpemUoOTU6OTMpIHJlc3BvbnNlX3N0YXR1cyg5Mjo5MSkgY2FjaGUoOTA6ODcpIHByb3RlY3Rpb24oODY6ODQpIHRocmVhZF9pZCg4MykgZGVzdF9pZCg4Mjo4MCkgc3JjX2lkKDc5Ojc3KSBxb3MoNzYpIGJlZ2luX2J1cnN0KDc1KSBkYXRhX3NpZGViYW5kKDc0KSBhZGRyX3NpZGViYW5kKDczKSBidXJzdF90eXBlKDcyOjcxKSBidXJzdF9zaXplKDcwOjY4KSBidXJzdHdyYXAoNjc6NjUpIGJ5dGVfY250KDY0OjYyKSB0cmFuc19leGNsdXNpdmUoNjEpIHRyYW5zX2xvY2soNjApIHRyYW5zX3JlYWQoNTkpIHRyYW5zX3dyaXRlKDU4KSB0cmFuc19wb3N0ZWQoNTcpIHRyYW5zX2NvbXByZXNzZWRfcmVhZCg1NikgYWRkcig1NTozNikgYnl0ZWVuKDM1OjMyKSBkYXRhKDMxOjAp::TWVybGluIHBhY2tldCBmb3JtYXQgZGVzY3JpcHRvcg=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfUkFURQ==::NTAwMDAwMDA=::QXV0byBDTE9DS19SQVRF"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux" -library "niosLab2" -name IP_COMPONENT_NAME "bmlvc0xhYjJfbW1faW50ZXJjb25uZWN0XzBfcnNwX2RlbXV4"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux" -library "niosLab2" -name IP_COMPONENT_DISPLAY_NAME "TWVtb3J5IE1hcHBlZCBEZW11bHRpcGxleGVy"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux" -library "niosLab2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
@@ -180,22 +180,22 @@ set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux" -library "n
 set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TUVSTElOX1BBQ0tFVF9GT1JNQVQ=::b3JpX2J1cnN0X3NpemUoOTU6OTMpIHJlc3BvbnNlX3N0YXR1cyg5Mjo5MSkgY2FjaGUoOTA6ODcpIHByb3RlY3Rpb24oODY6ODQpIHRocmVhZF9pZCg4MykgZGVzdF9pZCg4Mjo4MCkgc3JjX2lkKDc5Ojc3KSBxb3MoNzYpIGJlZ2luX2J1cnN0KDc1KSBkYXRhX3NpZGViYW5kKDc0KSBhZGRyX3NpZGViYW5kKDczKSBidXJzdF90eXBlKDcyOjcxKSBidXJzdF9zaXplKDcwOjY4KSBidXJzdHdyYXAoNjc6NjUpIGJ5dGVfY250KDY0OjYyKSB0cmFuc19leGNsdXNpdmUoNjEpIHRyYW5zX2xvY2soNjApIHRyYW5zX3JlYWQoNTkpIHRyYW5zX3dyaXRlKDU4KSB0cmFuc19wb3N0ZWQoNTcpIHRyYW5zX2NvbXByZXNzZWRfcmVhZCg1NikgYWRkcig1NTozNikgYnl0ZWVuKDM1OjMyKSBkYXRhKDMxOjAp::TWVybGluIHBhY2tldCBmb3JtYXQgZGVzY3JpcHRvcg=="
 set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfUkFURQ==::NTAwMDAwMDA=::QXV0byBDTE9DS19SQVRF"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_NAME "bmlvc0xhYjJfbW1faW50ZXJjb25uZWN0XzBfY21kX211eF8wMDE="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_DISPLAY_NAME "TWVtb3J5IE1hcHBlZCBNdWx0aXBsZXhlcg=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_INTERNAL "Off"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_VERSION "MTguMQ=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_DESCRIPTION "QXJiaXRyYXRlcyBiZXR3ZWVuIHJlcXVlc3RpbmcgbWFzdGVycyB1c2luZyBhbiBlcXVhbCBzaGFyZSwgcm91bmQtcm9iaW4gYWxnb3JpdGhtLiBUaGUgYXJiaXRyYXRpb24gc2NoZW1lIGNhbiBiZSBjaGFuZ2VkIHRvIHdlaWdodGVkIHJvdW5kLXJvYmluIGJ5IHNwZWNpZnlpbmcgYSByZWxhdGl2ZSBudW1iZXIgb2YgYXJiaXRyYXRpb24gc2hhcmVzIHRvIHRoZSBtYXN0ZXJzIHRoYXQgYWNjZXNzIGEgcGFydGljdWxhciBzbGF2ZS4="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RfREFUQV9X::OTY=::U3RyZWFtaW5nIGRhdGEgd2lkdGg="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RfQ0hBTk5FTF9X::Nw==::U3RyZWFtaW5nIGNoYW5uZWwgd2lkdGg="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TlVNX0lOUFVUUw==::Mg==::TnVtYmVyIG9mIG11eCBpbnB1dHM="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UElQRUxJTkVfQVJC::MQ==::UGlwZWxpbmVkIGFyYml0cmF0aW9u"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "VVNFX0VYVEVSTkFMX0FSQg==::MA==::VXNlIGV4dGVybmFsIGFyYml0cmF0aW9u"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX1RSQU5TX0xPQ0s=::NjA=::UGFja2V0IGxvY2sgdHJhbnNhY3Rpb24gZmllbGQgaW5kZXg="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVJCSVRSQVRJT05fU0NIRU1F::cm91bmQtcm9iaW4=::QXJiaXRyYXRpb24gc2NoZW1l"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVJCSVRSQVRJT05fU0hBUkVT::MSwx::QXJiaXRyYXRpb24gc2hhcmVz"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TUVSTElOX1BBQ0tFVF9GT1JNQVQ=::b3JpX2J1cnN0X3NpemUoOTU6OTMpIHJlc3BvbnNlX3N0YXR1cyg5Mjo5MSkgY2FjaGUoOTA6ODcpIHByb3RlY3Rpb24oODY6ODQpIHRocmVhZF9pZCg4MykgZGVzdF9pZCg4Mjo4MCkgc3JjX2lkKDc5Ojc3KSBxb3MoNzYpIGJlZ2luX2J1cnN0KDc1KSBkYXRhX3NpZGViYW5kKDc0KSBhZGRyX3NpZGViYW5kKDczKSBidXJzdF90eXBlKDcyOjcxKSBidXJzdF9zaXplKDcwOjY4KSBidXJzdHdyYXAoNjc6NjUpIGJ5dGVfY250KDY0OjYyKSB0cmFuc19leGNsdXNpdmUoNjEpIHRyYW5zX2xvY2soNjApIHRyYW5zX3JlYWQoNTkpIHRyYW5zX3dyaXRlKDU4KSB0cmFuc19wb3N0ZWQoNTcpIHRyYW5zX2NvbXByZXNzZWRfcmVhZCg1NikgYWRkcig1NTozNikgYnl0ZWVuKDM1OjMyKSBkYXRhKDMxOjAp::TWVybGluIHBhY2tldCBmb3JtYXQgZGVzY3JpcHRvcg=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_NAME "bmlvc0xhYjJfbW1faW50ZXJjb25uZWN0XzBfY21kX211eF8wMDI="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_DISPLAY_NAME "TWVtb3J5IE1hcHBlZCBNdWx0aXBsZXhlcg=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_VERSION "MTguMQ=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_DESCRIPTION "QXJiaXRyYXRlcyBiZXR3ZWVuIHJlcXVlc3RpbmcgbWFzdGVycyB1c2luZyBhbiBlcXVhbCBzaGFyZSwgcm91bmQtcm9iaW4gYWxnb3JpdGhtLiBUaGUgYXJiaXRyYXRpb24gc2NoZW1lIGNhbiBiZSBjaGFuZ2VkIHRvIHdlaWdodGVkIHJvdW5kLXJvYmluIGJ5IHNwZWNpZnlpbmcgYSByZWxhdGl2ZSBudW1iZXIgb2YgYXJiaXRyYXRpb24gc2hhcmVzIHRvIHRoZSBtYXN0ZXJzIHRoYXQgYWNjZXNzIGEgcGFydGljdWxhciBzbGF2ZS4="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RfREFUQV9X::OTY=::U3RyZWFtaW5nIGRhdGEgd2lkdGg="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RfQ0hBTk5FTF9X::Nw==::U3RyZWFtaW5nIGNoYW5uZWwgd2lkdGg="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TlVNX0lOUFVUUw==::Mg==::TnVtYmVyIG9mIG11eCBpbnB1dHM="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UElQRUxJTkVfQVJC::MQ==::UGlwZWxpbmVkIGFyYml0cmF0aW9u"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "VVNFX0VYVEVSTkFMX0FSQg==::MA==::VXNlIGV4dGVybmFsIGFyYml0cmF0aW9u"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX1RSQU5TX0xPQ0s=::NjA=::UGFja2V0IGxvY2sgdHJhbnNhY3Rpb24gZmllbGQgaW5kZXg="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVJCSVRSQVRJT05fU0NIRU1F::cm91bmQtcm9iaW4=::QXJiaXRyYXRpb24gc2NoZW1l"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVJCSVRSQVRJT05fU0hBUkVT::MSwx::QXJiaXRyYXRpb24gc2hhcmVz"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TUVSTElOX1BBQ0tFVF9GT1JNQVQ=::b3JpX2J1cnN0X3NpemUoOTU6OTMpIHJlc3BvbnNlX3N0YXR1cyg5Mjo5MSkgY2FjaGUoOTA6ODcpIHByb3RlY3Rpb24oODY6ODQpIHRocmVhZF9pZCg4MykgZGVzdF9pZCg4Mjo4MCkgc3JjX2lkKDc5Ojc3KSBxb3MoNzYpIGJlZ2luX2J1cnN0KDc1KSBkYXRhX3NpZGViYW5kKDc0KSBhZGRyX3NpZGViYW5kKDczKSBidXJzdF90eXBlKDcyOjcxKSBidXJzdF9zaXplKDcwOjY4KSBidXJzdHdyYXAoNjc6NjUpIGJ5dGVfY250KDY0OjYyKSB0cmFuc19leGNsdXNpdmUoNjEpIHRyYW5zX2xvY2soNjApIHRyYW5zX3JlYWQoNTkpIHRyYW5zX3dyaXRlKDU4KSB0cmFuc19wb3N0ZWQoNTcpIHRyYW5zX2NvbXByZXNzZWRfcmVhZCg1NikgYWRkcig1NTozNikgYnl0ZWVuKDM1OjMyKSBkYXRhKDMxOjAp::TWVybGluIHBhY2tldCBmb3JtYXQgZGVzY3JpcHRvcg=="
 set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux" -library "niosLab2" -name IP_COMPONENT_NAME "bmlvc0xhYjJfbW1faW50ZXJjb25uZWN0XzBfY21kX211eA=="
 set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux" -library "niosLab2" -name IP_COMPONENT_DISPLAY_NAME "TWVtb3J5IE1hcHBlZCBNdWx0aXBsZXhlcg=="
 set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux" -library "niosLab2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
@@ -271,39 +271,39 @@ set_global_assignment -entity "altera_merlin_traffic_limiter" -library "niosLab2
 set_global_assignment -entity "altera_merlin_traffic_limiter" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1VQUE9SVFNfTk9OUE9TVEVEX1dSSVRFUw==::MA==::SGF6YXJkIHByZXZlbnRpb246IG5vbi1wb3N0ZWQgd3JpdGUgc3VwcG9ydA=="
 set_global_assignment -entity "altera_merlin_traffic_limiter" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TUVSTElOX1BBQ0tFVF9GT1JNQVQ=::b3JpX2J1cnN0X3NpemUoOTU6OTMpIHJlc3BvbnNlX3N0YXR1cyg5Mjo5MSkgY2FjaGUoOTA6ODcpIHByb3RlY3Rpb24oODY6ODQpIHRocmVhZF9pZCg4MykgZGVzdF9pZCg4Mjo4MCkgc3JjX2lkKDc5Ojc3KSBxb3MoNzYpIGJlZ2luX2J1cnN0KDc1KSBkYXRhX3NpZGViYW5kKDc0KSBhZGRyX3NpZGViYW5kKDczKSBidXJzdF90eXBlKDcyOjcxKSBidXJzdF9zaXplKDcwOjY4KSBidXJzdHdyYXAoNjc6NjUpIGJ5dGVfY250KDY0OjYyKSB0cmFuc19leGNsdXNpdmUoNjEpIHRyYW5zX2xvY2soNjApIHRyYW5zX3JlYWQoNTkpIHRyYW5zX3dyaXRlKDU4KSB0cmFuc19wb3N0ZWQoNTcpIHRyYW5zX2NvbXByZXNzZWRfcmVhZCg1NikgYWRkcig1NTozNikgYnl0ZWVuKDM1OjMyKSBkYXRhKDMxOjAp::TWVybGluIHBhY2tldCBmb3JtYXQgZGVzY3JpcHRvcg=="
 set_global_assignment -entity "altera_merlin_traffic_limiter" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UkVPUkRFUg==::MA==::RW5hYmxlIHJlb3JkZXIgYnVmZmVy"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_NAME "bmlvc0xhYjJfbW1faW50ZXJjb25uZWN0XzBfcm91dGVyXzAwMw=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_DISPLAY_NAME "TWVtb3J5IE1hcHBlZCBSb3V0ZXI="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_INTERNAL "Off"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_VERSION "MTguMQ=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_DESCRIPTION "Um91dGVzIGNvbW1hbmQgcGFja2V0cyBmcm9tIHRoZSBtYXN0ZXIgdG8gdGhlIHNsYXZlIGFuZCByZXNwb25zZSBwYWNrZXRzIGZyb20gdGhlIHNsYXZlIHRvIHRoZSBtYXN0ZXIu"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVTVElOQVRJT05fSUQ=::MCwx::RGVzdGluYXRpb24gSUQ="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "Q0hBTk5FTF9JRA==::MDEsMTA=::QmluYXJ5IENoYW5uZWwgU3RyaW5n"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "VFlQRV9PRl9UUkFOU0FDVElPTg==::Ym90aCxyZWFk::VHlwZSBvZiBUcmFuc2FjdGlvbg=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RBUlRfQUREUkVTUw==::MHgwLDB4MA==::U3RhcnQgYWRkcmVzc2VzIChpbmNsdXNpdmUp"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "RU5EX0FERFJFU1M=::MHgwLDB4MA==::RW5kIGFkZHJlc3NlcyAoZXhjbHVzaXZlKQ=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "Tk9OX1NFQ1VSRURfVEFH::MSwx::Tm9uLXNlY3VyZWQgdGFncw=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U0VDVVJFRF9SQU5HRV9QQUlSUw==::MCww::TnVtYmVyIG9mIHNlY3VyZWQgcmFuZ2UgcGFpcnM="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U0VDVVJFRF9SQU5HRV9MSVNU::MCww::U2VjdXJlZCByYW5nZSBwYWlycw=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX0FERFJfSA==::NTU=::UGFja2V0IGFkZHJlc3MgZmllbGQgaW5kZXggLSBoaWdo"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX0FERFJfTA==::MzY=::UGFja2V0IGFkZHJlc3MgZmllbGQgaW5kZXggLSBsb3c="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX1BST1RFQ1RJT05fSA==::ODY=::UGFja2V0IEFYSSBwcm90ZWN0aW9uIGZpZWxkIGluZGV4IC0gaGlnaA=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX1BST1RFQ1RJT05fTA==::ODQ=::UGFja2V0IEFYSSBwcm90ZWN0aW9uIGZpZWxkIGluZGV4IC0gbG93"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX0RFU1RfSURfSA==::ODI=::UGFja2V0IGRlc3RpbmF0aW9uIGlkIGZpZWxkIGluZGV4IC0gaGlnaA=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX0RFU1RfSURfTA==::ODA=::UGFja2V0IGRlc3RpbmF0aW9uIGlkIGZpZWxkIGluZGV4IC0gbG93"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX1RSQU5TX1dSSVRF::NTg=::UGFja2V0IHdyaXRlIHRyYW5zYWN0aW9uIGZpZWxkIGluZGV4"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX1RSQU5TX1JFQUQ=::NTk=::UGFja2V0IHJlYWQgdHJhbnNhY3Rpb24gZmllbGQgaW5kZXg="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RfREFUQV9X::OTY=::U3RyZWFtaW5nIGRhdGEgd2lkdGg="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RfQ0hBTk5FTF9X::Nw==::U3RyZWFtaW5nIGNoYW5uZWwgd2lkdGg="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U0xBVkVTX0lORk8=::MDowMToweDA6MHgwOmJvdGg6MTowOjA6MSwxOjEwOjB4MDoweDA6cmVhZDoxOjA6MDox::U0xBVkVTX0lORk8="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVDT0RFUl9UWVBF::MQ==::RGVjb2RlciB0eXBl"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVGQVVMVF9DSEFOTkVM::MA==::RGVmYXVsdCBjaGFubmVs"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVGQVVMVF9XUl9DSEFOTkVM::LTE=::RGVmYXVsdCB3ciBjaGFubmVs"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVGQVVMVF9SRF9DSEFOTkVM::LTE=::RGVmYXVsdCByZCBjaGFubmVs"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVGQVVMVF9ERVNUSUQ=::MA==::RGVmYXVsdCBkZXN0aW5hdGlvbiBJRA=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TUVSTElOX1BBQ0tFVF9GT1JNQVQ=::b3JpX2J1cnN0X3NpemUoOTU6OTMpIHJlc3BvbnNlX3N0YXR1cyg5Mjo5MSkgY2FjaGUoOTA6ODcpIHByb3RlY3Rpb24oODY6ODQpIHRocmVhZF9pZCg4MykgZGVzdF9pZCg4Mjo4MCkgc3JjX2lkKDc5Ojc3KSBxb3MoNzYpIGJlZ2luX2J1cnN0KDc1KSBkYXRhX3NpZGViYW5kKDc0KSBhZGRyX3NpZGViYW5kKDczKSBidXJzdF90eXBlKDcyOjcxKSBidXJzdF9zaXplKDcwOjY4KSBidXJzdHdyYXAoNjc6NjUpIGJ5dGVfY250KDY0OjYyKSB0cmFuc19leGNsdXNpdmUoNjEpIHRyYW5zX2xvY2soNjApIHRyYW5zX3JlYWQoNTkpIHRyYW5zX3dyaXRlKDU4KSB0cmFuc19wb3N0ZWQoNTcpIHRyYW5zX2NvbXByZXNzZWRfcmVhZCg1NikgYWRkcig1NTozNikgYnl0ZWVuKDM1OjMyKSBkYXRhKDMxOjAp::TWVybGluIHBhY2tldCBmb3JtYXQgZGVzY3JpcHRvcg=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TUVNT1JZX0FMSUFTSU5HX0RFQ09ERQ==::MA==::TWVtb3J5IEFsaWFzaW5nIERlY29kZQ=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_NAME "bmlvc0xhYjJfbW1faW50ZXJjb25uZWN0XzBfcm91dGVyXzAwNA=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_DISPLAY_NAME "TWVtb3J5IE1hcHBlZCBSb3V0ZXI="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_VERSION "MTguMQ=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_DESCRIPTION "Um91dGVzIGNvbW1hbmQgcGFja2V0cyBmcm9tIHRoZSBtYXN0ZXIgdG8gdGhlIHNsYXZlIGFuZCByZXNwb25zZSBwYWNrZXRzIGZyb20gdGhlIHNsYXZlIHRvIHRoZSBtYXN0ZXIu"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVTVElOQVRJT05fSUQ=::MCwx::RGVzdGluYXRpb24gSUQ="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "Q0hBTk5FTF9JRA==::MDEsMTA=::QmluYXJ5IENoYW5uZWwgU3RyaW5n"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "VFlQRV9PRl9UUkFOU0FDVElPTg==::Ym90aCxyZWFk::VHlwZSBvZiBUcmFuc2FjdGlvbg=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RBUlRfQUREUkVTUw==::MHgwLDB4MA==::U3RhcnQgYWRkcmVzc2VzIChpbmNsdXNpdmUp"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "RU5EX0FERFJFU1M=::MHgwLDB4MA==::RW5kIGFkZHJlc3NlcyAoZXhjbHVzaXZlKQ=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "Tk9OX1NFQ1VSRURfVEFH::MSwx::Tm9uLXNlY3VyZWQgdGFncw=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U0VDVVJFRF9SQU5HRV9QQUlSUw==::MCww::TnVtYmVyIG9mIHNlY3VyZWQgcmFuZ2UgcGFpcnM="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U0VDVVJFRF9SQU5HRV9MSVNU::MCww::U2VjdXJlZCByYW5nZSBwYWlycw=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX0FERFJfSA==::NTU=::UGFja2V0IGFkZHJlc3MgZmllbGQgaW5kZXggLSBoaWdo"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX0FERFJfTA==::MzY=::UGFja2V0IGFkZHJlc3MgZmllbGQgaW5kZXggLSBsb3c="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX1BST1RFQ1RJT05fSA==::ODY=::UGFja2V0IEFYSSBwcm90ZWN0aW9uIGZpZWxkIGluZGV4IC0gaGlnaA=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX1BST1RFQ1RJT05fTA==::ODQ=::UGFja2V0IEFYSSBwcm90ZWN0aW9uIGZpZWxkIGluZGV4IC0gbG93"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX0RFU1RfSURfSA==::ODI=::UGFja2V0IGRlc3RpbmF0aW9uIGlkIGZpZWxkIGluZGV4IC0gaGlnaA=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX0RFU1RfSURfTA==::ODA=::UGFja2V0IGRlc3RpbmF0aW9uIGlkIGZpZWxkIGluZGV4IC0gbG93"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX1RSQU5TX1dSSVRF::NTg=::UGFja2V0IHdyaXRlIHRyYW5zYWN0aW9uIGZpZWxkIGluZGV4"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX1RSQU5TX1JFQUQ=::NTk=::UGFja2V0IHJlYWQgdHJhbnNhY3Rpb24gZmllbGQgaW5kZXg="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RfREFUQV9X::OTY=::U3RyZWFtaW5nIGRhdGEgd2lkdGg="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RfQ0hBTk5FTF9X::Nw==::U3RyZWFtaW5nIGNoYW5uZWwgd2lkdGg="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U0xBVkVTX0lORk8=::MDowMToweDA6MHgwOmJvdGg6MTowOjA6MSwxOjEwOjB4MDoweDA6cmVhZDoxOjA6MDox::U0xBVkVTX0lORk8="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVDT0RFUl9UWVBF::MQ==::RGVjb2RlciB0eXBl"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVGQVVMVF9DSEFOTkVM::MA==::RGVmYXVsdCBjaGFubmVs"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVGQVVMVF9XUl9DSEFOTkVM::LTE=::RGVmYXVsdCB3ciBjaGFubmVs"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVGQVVMVF9SRF9DSEFOTkVM::LTE=::RGVmYXVsdCByZCBjaGFubmVs"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVGQVVMVF9ERVNUSUQ=::MA==::RGVmYXVsdCBkZXN0aW5hdGlvbiBJRA=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TUVSTElOX1BBQ0tFVF9GT1JNQVQ=::b3JpX2J1cnN0X3NpemUoOTU6OTMpIHJlc3BvbnNlX3N0YXR1cyg5Mjo5MSkgY2FjaGUoOTA6ODcpIHByb3RlY3Rpb24oODY6ODQpIHRocmVhZF9pZCg4MykgZGVzdF9pZCg4Mjo4MCkgc3JjX2lkKDc5Ojc3KSBxb3MoNzYpIGJlZ2luX2J1cnN0KDc1KSBkYXRhX3NpZGViYW5kKDc0KSBhZGRyX3NpZGViYW5kKDczKSBidXJzdF90eXBlKDcyOjcxKSBidXJzdF9zaXplKDcwOjY4KSBidXJzdHdyYXAoNjc6NjUpIGJ5dGVfY250KDY0OjYyKSB0cmFuc19leGNsdXNpdmUoNjEpIHRyYW5zX2xvY2soNjApIHRyYW5zX3JlYWQoNTkpIHRyYW5zX3dyaXRlKDU4KSB0cmFuc19wb3N0ZWQoNTcpIHRyYW5zX2NvbXByZXNzZWRfcmVhZCg1NikgYWRkcig1NTozNikgYnl0ZWVuKDM1OjMyKSBkYXRhKDMxOjAp::TWVybGluIHBhY2tldCBmb3JtYXQgZGVzY3JpcHRvcg=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TUVNT1JZX0FMSUFTSU5HX0RFQ09ERQ==::MA==::TWVtb3J5IEFsaWFzaW5nIERlY29kZQ=="
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router_002" -library "niosLab2" -name IP_COMPONENT_NAME "bmlvc0xhYjJfbW1faW50ZXJjb25uZWN0XzBfcm91dGVyXzAwMg=="
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router_002" -library "niosLab2" -name IP_COMPONENT_DISPLAY_NAME "TWVtb3J5IE1hcHBlZCBSb3V0ZXI="
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router_002" -library "niosLab2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
@@ -377,11 +377,11 @@ set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "nios
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_VERSION "MTguMQ=="
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_DESCRIPTION "Um91dGVzIGNvbW1hbmQgcGFja2V0cyBmcm9tIHRoZSBtYXN0ZXIgdG8gdGhlIHNsYXZlIGFuZCByZXNwb25zZSBwYWNrZXRzIGZyb20gdGhlIHNsYXZlIHRvIHRoZSBtYXN0ZXIu"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVTVElOQVRJT05fSUQ=::MiwzLDEsNiw1LDQsMA==::RGVzdGluYXRpb24gSUQ="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "Q0hBTk5FTF9JRA==::MDAwMDEwMCwxMDAwMDAwLDAwMDAwMTAsMDEwMDAwMCwwMDEwMDAwLDAwMDEwMDAsMDAwMDAwMQ==::QmluYXJ5IENoYW5uZWwgU3RyaW5n"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVTVElOQVRJT05fSUQ=::NCwyLDMsMSw2LDUsMA==::RGVzdGluYXRpb24gSUQ="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "Q0hBTk5FTF9JRA==::MDAwMDAxMCwwMDAxMDAwLDEwMDAwMDAsMDAwMDEwMCwwMTAwMDAwLDAwMTAwMDAsMDAwMDAwMQ==::QmluYXJ5IENoYW5uZWwgU3RyaW5n"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "VFlQRV9PRl9UUkFOU0FDVElPTg==::Ym90aCxib3RoLGJvdGgsYm90aCxib3RoLGJvdGgsYm90aA==::VHlwZSBvZiBUcmFuc2FjdGlvbg=="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RBUlRfQUREUkVTUw==::MHg0MDAwMCwweDgwMDAwLDB4YTA4MDAsMHhhMTAwMCwweGExMDEwLDB4YTEwMjAsMHhhMTAzMA==::U3RhcnQgYWRkcmVzc2VzIChpbmNsdXNpdmUp"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "RU5EX0FERFJFU1M=::MHg4MDAwMCwweGEwMDAwLDB4YTEwMDAsMHhhMTAxMCwweGExMDIwLDB4YTEwMzAsMHhhMTAzOA==::RW5kIGFkZHJlc3NlcyAoZXhjbHVzaXZlKQ=="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RBUlRfQUREUkVTUw==::MHgwLDB4NDAwMDAsMHg4MDAwMCwweGEwODAwLDB4YTEwMTAsMHhhMTAyMCwweGExMDMw::U3RhcnQgYWRkcmVzc2VzIChpbmNsdXNpdmUp"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "RU5EX0FERFJFU1M=::MHg0MCwweDgwMDAwLDB4YTAwMDAsMHhhMTAwMCwweGExMDIwLDB4YTEwMzAsMHhhMTAzOA==::RW5kIGFkZHJlc3NlcyAoZXhjbHVzaXZlKQ=="
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "Tk9OX1NFQ1VSRURfVEFH::MSwxLDEsMSwxLDEsMQ==::Tm9uLXNlY3VyZWQgdGFncw=="
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U0VDVVJFRF9SQU5HRV9QQUlSUw==::MCwwLDAsMCwwLDAsMA==::TnVtYmVyIG9mIHNlY3VyZWQgcmFuZ2UgcGFpcnM="
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U0VDVVJFRF9SQU5HRV9MSVNU::MCwwLDAsMCwwLDAsMA==::U2VjdXJlZCByYW5nZSBwYWlycw=="
@@ -395,9 +395,9 @@ set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "nios
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "UEtUX1RSQU5TX1JFQUQ=::NTk=::UGFja2V0IHJlYWQgdHJhbnNhY3Rpb24gZmllbGQgaW5kZXg="
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RfREFUQV9X::OTY=::U3RyZWFtaW5nIGRhdGEgd2lkdGg="
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1RfQ0hBTk5FTF9X::Nw==::U3RyZWFtaW5nIGNoYW5uZWwgd2lkdGg="
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U0xBVkVTX0lORk8=::MjowMDAwMTAwOjB4NDAwMDA6MHg4MDAwMDpib3RoOjE6MDowOjEsMzoxMDAwMDAwOjB4ODAwMDA6MHhhMDAwMDpib3RoOjE6MDowOjEsMTowMDAwMDEwOjB4YTA4MDA6MHhhMTAwMDpib3RoOjE6MDowOjEsNjowMTAwMDAwOjB4YTEwMDA6MHhhMTAxMDpib3RoOjE6MDowOjEsNTowMDEwMDAwOjB4YTEwMTA6MHhhMTAyMDpib3RoOjE6MDowOjEsNDowMDAxMDAwOjB4YTEwMjA6MHhhMTAzMDpib3RoOjE6MDowOjEsMDowMDAwMDAxOjB4YTEwMzA6MHhhMTAzODpib3RoOjE6MDowOjE=::U0xBVkVTX0lORk8="
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U0xBVkVTX0lORk8=::NDowMDAwMDEwOjB4MDoweDQwOmJvdGg6MTowOjA6MSwyOjAwMDEwMDA6MHg0MDAwMDoweDgwMDAwOmJvdGg6MTowOjA6MSwzOjEwMDAwMDA6MHg4MDAwMDoweGEwMDAwOmJvdGg6MTowOjA6MSwxOjAwMDAxMDA6MHhhMDgwMDoweGExMDAwOmJvdGg6MTowOjA6MSw2OjAxMDAwMDA6MHhhMTAxMDoweGExMDIwOmJvdGg6MTowOjA6MSw1OjAwMTAwMDA6MHhhMTAyMDoweGExMDMwOmJvdGg6MTowOjA6MSwwOjAwMDAwMDE6MHhhMTAzMDoweGExMDM4OmJvdGg6MTowOjA6MQ==::U0xBVkVTX0lORk8="
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVDT0RFUl9UWVBF::MA==::RGVjb2RlciB0eXBl"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVGQVVMVF9DSEFOTkVM::Mg==::RGVmYXVsdCBjaGFubmVs"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVGQVVMVF9DSEFOTkVM::Mw==::RGVmYXVsdCBjaGFubmVs"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVGQVVMVF9XUl9DSEFOTkVM::LTE=::RGVmYXVsdCB3ciBjaGFubmVs"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVGQVVMVF9SRF9DSEFOTkVM::LTE=::RGVmYXVsdCByZCBjaGFubmVs"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router" -library "niosLab2" -name IP_COMPONENT_PARAMETER "REVGQVVMVF9ERVNUSUQ=::Mg==::RGVmYXVsdCBkZXN0aW5hdGlvbiBJRA=="
@@ -651,25 +651,6 @@ set_global_assignment -entity "altera_merlin_master_translator" -library "niosLa
 set_global_assignment -entity "altera_merlin_master_translator" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVZfUkVHSVNURVJJTkNPTUlOR1NJR05BTFM=::MA==::cmVnaXN0ZXJJbmNvbWluZ1NpZ25hbHM="
 set_global_assignment -entity "altera_merlin_master_translator" -library "niosLab2" -name IP_COMPONENT_PARAMETER "QVZfQUxXQVlTQlVSU1RNQVhCVVJTVA==::MA==::QWx3YXlzIGJ1cnN0IG1heC1idXJzdA=="
 set_global_assignment -entity "altera_merlin_master_translator" -library "niosLab2" -name IP_COMPONENT_PARAMETER "U1lOQ19SRVNFVA==::MA==::VXNlIHN5bmNocm9ub3VzIHJlc2V0cw=="
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_NAME "bmlvc0xhYjJfcGlvXzI="
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_DISPLAY_NAME "UElPIChQYXJhbGxlbCBJL08pIEludGVsIEZQR0EgSVA="
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_INTERNAL "Off"
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_VERSION "MTguMQ=="
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "Yml0TW9kaWZ5aW5nT3V0UmVn::ZmFsc2U=::RW5hYmxlIGluZGl2aWR1YWwgYml0IHNldHRpbmcvY2xlYXJpbmc="
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGlyZWN0aW9u::T3V0cHV0::RGlyZWN0aW9u"
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "cmVzZXRWYWx1ZQ==::MA==::T3V0cHV0IFBvcnQgUmVzZXQgVmFsdWU="
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "d2lkdGg=::NA==::V2lkdGggKDEtMzIgYml0cyk="
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "Y2xvY2tSYXRl::NTAwMDAwMDA=::Y2xvY2tSYXRl"
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfdHJp::ZmFsc2U=::ZGVyaXZlZF9oYXNfdHJp"
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfb3V0::dHJ1ZQ==::ZGVyaXZlZF9oYXNfb3V0"
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfaW4=::ZmFsc2U=::ZGVyaXZlZF9oYXNfaW4="
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9kb190ZXN0X2JlbmNoX3dpcmluZw==::ZmFsc2U=::ZGVyaXZlZF9kb190ZXN0X2JlbmNoX3dpcmluZw=="
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9jYXB0dXJl::ZmFsc2U=::ZGVyaXZlZF9jYXB0dXJl"
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9lZGdlX3R5cGU=::Tk9ORQ==::ZGVyaXZlZF9lZGdlX3R5cGU="
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9pcnFfdHlwZQ==::Tk9ORQ==::ZGVyaXZlZF9pcnFfdHlwZQ=="
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfaXJx::ZmFsc2U=::ZGVyaXZlZF9oYXNfaXJx"
 set_global_assignment -entity "niosLab2_pio_1" -library "niosLab2" -name IP_COMPONENT_NAME "bmlvc0xhYjJfcGlvXzE="
 set_global_assignment -entity "niosLab2_pio_1" -library "niosLab2" -name IP_COMPONENT_DISPLAY_NAME "UElPIChQYXJhbGxlbCBJL08pIEludGVsIEZQR0EgSVA="
 set_global_assignment -entity "niosLab2_pio_1" -library "niosLab2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
@@ -712,6 +693,14 @@ set_global_assignment -entity "niosLab2_pio_0" -library "niosLab2" -name IP_COMP
 set_global_assignment -entity "niosLab2_pio_0" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9lZGdlX3R5cGU=::Tk9ORQ==::ZGVyaXZlZF9lZGdlX3R5cGU="
 set_global_assignment -entity "niosLab2_pio_0" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9pcnFfdHlwZQ==::Tk9ORQ==::ZGVyaXZlZF9pcnFfdHlwZQ=="
 set_global_assignment -entity "niosLab2_pio_0" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfaXJx::ZmFsc2U=::ZGVyaXZlZF9oYXNfaXJx"
+set_global_assignment -entity "peripheral_motor" -library "niosLab2" -name IP_COMPONENT_NAME "cGVyaXBoZXJhbF9tb3Rvcg=="
+set_global_assignment -entity "peripheral_motor" -library "niosLab2" -name IP_COMPONENT_DISPLAY_NAME "cGVyaXBoZXJhbF9tb3Rvcg=="
+set_global_assignment -entity "peripheral_motor" -library "niosLab2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "peripheral_motor" -library "niosLab2" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "peripheral_motor" -library "niosLab2" -name IP_COMPONENT_AUTHOR "SGVucnlSb2NoYQ=="
+set_global_assignment -entity "peripheral_motor" -library "niosLab2" -name IP_COMPONENT_VERSION "MC4x"
+set_global_assignment -entity "peripheral_motor" -library "niosLab2" -name IP_COMPONENT_DESCRIPTION "UGVyaWbDqXJpY28gcGFyYSBjb250cm9sYXIgbyBtb3Rvci4="
+set_global_assignment -entity "peripheral_motor" -library "niosLab2" -name IP_COMPONENT_PARAMETER "TEVO::NA==::TEVO"
 set_global_assignment -entity "niosLab2_onchip_memory2_1" -library "niosLab2" -name IP_COMPONENT_NAME "bmlvc0xhYjJfb25jaGlwX21lbW9yeTJfMQ=="
 set_global_assignment -entity "niosLab2_onchip_memory2_1" -library "niosLab2" -name IP_COMPONENT_DISPLAY_NAME "T24tQ2hpcCBNZW1vcnkgKFJBTSBvciBST00pIEludGVsIEZQR0EgSVA="
 set_global_assignment -entity "niosLab2_onchip_memory2_1" -library "niosLab2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
@@ -934,7 +923,7 @@ set_global_assignment -entity "niosLab2_nios2_gen2_0" -library "niosLab2" -name 
 set_global_assignment -entity "niosLab2_nios2_gen2_0" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGF0YU1hc3RlckhpZ2hQZXJmb3JtYW5jZUFkZHJXaWR0aA==::MQ==::ZGF0YU1hc3RlckhpZ2hQZXJmb3JtYW5jZUFkZHJXaWR0aA=="
 set_global_assignment -entity "niosLab2_nios2_gen2_0" -library "niosLab2" -name IP_COMPONENT_PARAMETER "aW5zdHJ1Y3Rpb25NYXN0ZXJIaWdoUGVyZm9ybWFuY2VBZGRyV2lkdGg=::MQ==::aW5zdHJ1Y3Rpb25NYXN0ZXJIaWdoUGVyZm9ybWFuY2VBZGRyV2lkdGg="
 set_global_assignment -entity "niosLab2_nios2_gen2_0" -library "niosLab2" -name IP_COMPONENT_PARAMETER "aW5zdFNsYXZlTWFwUGFyYW0=::PGFkZHJlc3MtbWFwPjxzbGF2ZSBuYW1lPSdvbmNoaXBfbWVtb3J5Ml8wLnMxJyBzdGFydD0nMHg0MDAwMCcgZW5kPScweDY4MDAwJyB0eXBlPSdhbHRlcmFfYXZhbG9uX29uY2hpcF9tZW1vcnkyLnMxJyAvPjxzbGF2ZSBuYW1lPSduaW9zMl9nZW4yXzAuZGVidWdfbWVtX3NsYXZlJyBzdGFydD0nMHhBMDgwMCcgZW5kPScweEExMDAwJyB0eXBlPSdhbHRlcmFfbmlvczJfZ2VuMi5kZWJ1Z19tZW1fc2xhdmUnIC8+PC9hZGRyZXNzLW1hcD4=::aW5zdFNsYXZlTWFwUGFyYW0="
-set_global_assignment -entity "niosLab2_nios2_gen2_0" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGF0YVNsYXZlTWFwUGFyYW0=::PGFkZHJlc3MtbWFwPjxzbGF2ZSBuYW1lPSdvbmNoaXBfbWVtb3J5Ml8wLnMxJyBzdGFydD0nMHg0MDAwMCcgZW5kPScweDY4MDAwJyB0eXBlPSdhbHRlcmFfYXZhbG9uX29uY2hpcF9tZW1vcnkyLnMxJyAvPjxzbGF2ZSBuYW1lPSdvbmNoaXBfbWVtb3J5Ml8xLnMxJyBzdGFydD0nMHg4MDAwMCcgZW5kPScweDlGNDAwJyB0eXBlPSdhbHRlcmFfYXZhbG9uX29uY2hpcF9tZW1vcnkyLnMxJyAvPjxzbGF2ZSBuYW1lPSduaW9zMl9nZW4yXzAuZGVidWdfbWVtX3NsYXZlJyBzdGFydD0nMHhBMDgwMCcgZW5kPScweEExMDAwJyB0eXBlPSdhbHRlcmFfbmlvczJfZ2VuMi5kZWJ1Z19tZW1fc2xhdmUnIC8+PHNsYXZlIG5hbWU9J3Bpb18yLnMxJyBzdGFydD0nMHhBMTAwMCcgZW5kPScweEExMDEwJyB0eXBlPSdhbHRlcmFfYXZhbG9uX3Bpby5zMScgLz48c2xhdmUgbmFtZT0ncGlvXzEuczEnIHN0YXJ0PScweEExMDEwJyBlbmQ9JzB4QTEwMjAnIHR5cGU9J2FsdGVyYV9hdmFsb25fcGlvLnMxJyAvPjxzbGF2ZSBuYW1lPSdwaW9fMC5zMScgc3RhcnQ9JzB4QTEwMjAnIGVuZD0nMHhBMTAzMCcgdHlwZT0nYWx0ZXJhX2F2YWxvbl9waW8uczEnIC8+PHNsYXZlIG5hbWU9J2p0YWdfdWFydF8wLmF2YWxvbl9qdGFnX3NsYXZlJyBzdGFydD0nMHhBMTAzMCcgZW5kPScweEExMDM4JyB0eXBlPSdhbHRlcmFfYXZhbG9uX2p0YWdfdWFydC5hdmFsb25fanRhZ19zbGF2ZScgLz48L2FkZHJlc3MtbWFwPg==::ZGF0YVNsYXZlTWFwUGFyYW0="
+set_global_assignment -entity "niosLab2_nios2_gen2_0" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGF0YVNsYXZlTWFwUGFyYW0=::PGFkZHJlc3MtbWFwPjxzbGF2ZSBuYW1lPSdwZXJpcGhlcmFsX21vdG9yXzAuYXZhbG9uX3NsYXZlXzAnIHN0YXJ0PScweDAnIGVuZD0nMHg0MCcgdHlwZT0ncGVyaXBoZXJhbF9tb3Rvci5hdmFsb25fc2xhdmVfMCcgLz48c2xhdmUgbmFtZT0nb25jaGlwX21lbW9yeTJfMC5zMScgc3RhcnQ9JzB4NDAwMDAnIGVuZD0nMHg2ODAwMCcgdHlwZT0nYWx0ZXJhX2F2YWxvbl9vbmNoaXBfbWVtb3J5Mi5zMScgLz48c2xhdmUgbmFtZT0nb25jaGlwX21lbW9yeTJfMS5zMScgc3RhcnQ9JzB4ODAwMDAnIGVuZD0nMHg5RjQwMCcgdHlwZT0nYWx0ZXJhX2F2YWxvbl9vbmNoaXBfbWVtb3J5Mi5zMScgLz48c2xhdmUgbmFtZT0nbmlvczJfZ2VuMl8wLmRlYnVnX21lbV9zbGF2ZScgc3RhcnQ9JzB4QTA4MDAnIGVuZD0nMHhBMTAwMCcgdHlwZT0nYWx0ZXJhX25pb3MyX2dlbjIuZGVidWdfbWVtX3NsYXZlJyAvPjxzbGF2ZSBuYW1lPSdwaW9fMS5zMScgc3RhcnQ9JzB4QTEwMTAnIGVuZD0nMHhBMTAyMCcgdHlwZT0nYWx0ZXJhX2F2YWxvbl9waW8uczEnIC8+PHNsYXZlIG5hbWU9J3Bpb18wLnMxJyBzdGFydD0nMHhBMTAyMCcgZW5kPScweEExMDMwJyB0eXBlPSdhbHRlcmFfYXZhbG9uX3Bpby5zMScgLz48c2xhdmUgbmFtZT0nanRhZ191YXJ0XzAuYXZhbG9uX2p0YWdfc2xhdmUnIHN0YXJ0PScweEExMDMwJyBlbmQ9JzB4QTEwMzgnIHR5cGU9J2FsdGVyYV9hdmFsb25fanRhZ191YXJ0LmF2YWxvbl9qdGFnX3NsYXZlJyAvPjwvYWRkcmVzcy1tYXA+::ZGF0YVNsYXZlTWFwUGFyYW0="
 set_global_assignment -entity "niosLab2_nios2_gen2_0" -library "niosLab2" -name IP_COMPONENT_PARAMETER "Y2xvY2tGcmVxdWVuY3k=::NTAwMDAwMDA=::Y2xvY2tGcmVxdWVuY3k="
 set_global_assignment -entity "niosLab2_nios2_gen2_0" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGV2aWNlRmFtaWx5TmFtZQ==::Q3ljbG9uZSBW::ZGV2aWNlRmFtaWx5TmFtZQ=="
 set_global_assignment -entity "niosLab2_nios2_gen2_0" -library "niosLab2" -name IP_COMPONENT_PARAMETER "aW50ZXJuYWxJcnFNYXNrU3lzdGVtSW5mbw==::Mw==::aW50ZXJuYWxJcnFNYXNrU3lzdGVtSW5mbw=="
@@ -1117,7 +1106,7 @@ set_global_assignment -entity "niosLab2_nios2_gen2_0_cpu" -library "niosLab2" -n
 set_global_assignment -entity "niosLab2_nios2_gen2_0_cpu" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGF0YU1hc3RlckhpZ2hQZXJmb3JtYW5jZUFkZHJXaWR0aA==::MQ==::ZGF0YU1hc3RlckhpZ2hQZXJmb3JtYW5jZUFkZHJXaWR0aA=="
 set_global_assignment -entity "niosLab2_nios2_gen2_0_cpu" -library "niosLab2" -name IP_COMPONENT_PARAMETER "aW5zdHJ1Y3Rpb25NYXN0ZXJIaWdoUGVyZm9ybWFuY2VBZGRyV2lkdGg=::MQ==::aW5zdHJ1Y3Rpb25NYXN0ZXJIaWdoUGVyZm9ybWFuY2VBZGRyV2lkdGg="
 set_global_assignment -entity "niosLab2_nios2_gen2_0_cpu" -library "niosLab2" -name IP_COMPONENT_PARAMETER "aW5zdFNsYXZlTWFwUGFyYW0=::PGFkZHJlc3MtbWFwPjxzbGF2ZSBuYW1lPSdvbmNoaXBfbWVtb3J5Ml8wLnMxJyBzdGFydD0nMHg0MDAwMCcgZW5kPScweDY4MDAwJyB0eXBlPSdhbHRlcmFfYXZhbG9uX29uY2hpcF9tZW1vcnkyLnMxJyAvPjxzbGF2ZSBuYW1lPSduaW9zMl9nZW4yXzAuZGVidWdfbWVtX3NsYXZlJyBzdGFydD0nMHhBMDgwMCcgZW5kPScweEExMDAwJyB0eXBlPSdhbHRlcmFfbmlvczJfZ2VuMi5kZWJ1Z19tZW1fc2xhdmUnIC8+PC9hZGRyZXNzLW1hcD4=::aW5zdFNsYXZlTWFwUGFyYW0="
-set_global_assignment -entity "niosLab2_nios2_gen2_0_cpu" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGF0YVNsYXZlTWFwUGFyYW0=::PGFkZHJlc3MtbWFwPjxzbGF2ZSBuYW1lPSdvbmNoaXBfbWVtb3J5Ml8wLnMxJyBzdGFydD0nMHg0MDAwMCcgZW5kPScweDY4MDAwJyB0eXBlPSdhbHRlcmFfYXZhbG9uX29uY2hpcF9tZW1vcnkyLnMxJyAvPjxzbGF2ZSBuYW1lPSdvbmNoaXBfbWVtb3J5Ml8xLnMxJyBzdGFydD0nMHg4MDAwMCcgZW5kPScweDlGNDAwJyB0eXBlPSdhbHRlcmFfYXZhbG9uX29uY2hpcF9tZW1vcnkyLnMxJyAvPjxzbGF2ZSBuYW1lPSduaW9zMl9nZW4yXzAuZGVidWdfbWVtX3NsYXZlJyBzdGFydD0nMHhBMDgwMCcgZW5kPScweEExMDAwJyB0eXBlPSdhbHRlcmFfbmlvczJfZ2VuMi5kZWJ1Z19tZW1fc2xhdmUnIC8+PHNsYXZlIG5hbWU9J3Bpb18yLnMxJyBzdGFydD0nMHhBMTAwMCcgZW5kPScweEExMDEwJyB0eXBlPSdhbHRlcmFfYXZhbG9uX3Bpby5zMScgLz48c2xhdmUgbmFtZT0ncGlvXzEuczEnIHN0YXJ0PScweEExMDEwJyBlbmQ9JzB4QTEwMjAnIHR5cGU9J2FsdGVyYV9hdmFsb25fcGlvLnMxJyAvPjxzbGF2ZSBuYW1lPSdwaW9fMC5zMScgc3RhcnQ9JzB4QTEwMjAnIGVuZD0nMHhBMTAzMCcgdHlwZT0nYWx0ZXJhX2F2YWxvbl9waW8uczEnIC8+PHNsYXZlIG5hbWU9J2p0YWdfdWFydF8wLmF2YWxvbl9qdGFnX3NsYXZlJyBzdGFydD0nMHhBMTAzMCcgZW5kPScweEExMDM4JyB0eXBlPSdhbHRlcmFfYXZhbG9uX2p0YWdfdWFydC5hdmFsb25fanRhZ19zbGF2ZScgLz48L2FkZHJlc3MtbWFwPg==::ZGF0YVNsYXZlTWFwUGFyYW0="
+set_global_assignment -entity "niosLab2_nios2_gen2_0_cpu" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGF0YVNsYXZlTWFwUGFyYW0=::PGFkZHJlc3MtbWFwPjxzbGF2ZSBuYW1lPSdwZXJpcGhlcmFsX21vdG9yXzAuYXZhbG9uX3NsYXZlXzAnIHN0YXJ0PScweDAnIGVuZD0nMHg0MCcgdHlwZT0ncGVyaXBoZXJhbF9tb3Rvci5hdmFsb25fc2xhdmVfMCcgLz48c2xhdmUgbmFtZT0nb25jaGlwX21lbW9yeTJfMC5zMScgc3RhcnQ9JzB4NDAwMDAnIGVuZD0nMHg2ODAwMCcgdHlwZT0nYWx0ZXJhX2F2YWxvbl9vbmNoaXBfbWVtb3J5Mi5zMScgLz48c2xhdmUgbmFtZT0nb25jaGlwX21lbW9yeTJfMS5zMScgc3RhcnQ9JzB4ODAwMDAnIGVuZD0nMHg5RjQwMCcgdHlwZT0nYWx0ZXJhX2F2YWxvbl9vbmNoaXBfbWVtb3J5Mi5zMScgLz48c2xhdmUgbmFtZT0nbmlvczJfZ2VuMl8wLmRlYnVnX21lbV9zbGF2ZScgc3RhcnQ9JzB4QTA4MDAnIGVuZD0nMHhBMTAwMCcgdHlwZT0nYWx0ZXJhX25pb3MyX2dlbjIuZGVidWdfbWVtX3NsYXZlJyAvPjxzbGF2ZSBuYW1lPSdwaW9fMS5zMScgc3RhcnQ9JzB4QTEwMTAnIGVuZD0nMHhBMTAyMCcgdHlwZT0nYWx0ZXJhX2F2YWxvbl9waW8uczEnIC8+PHNsYXZlIG5hbWU9J3Bpb18wLnMxJyBzdGFydD0nMHhBMTAyMCcgZW5kPScweEExMDMwJyB0eXBlPSdhbHRlcmFfYXZhbG9uX3Bpby5zMScgLz48c2xhdmUgbmFtZT0nanRhZ191YXJ0XzAuYXZhbG9uX2p0YWdfc2xhdmUnIHN0YXJ0PScweEExMDMwJyBlbmQ9JzB4QTEwMzgnIHR5cGU9J2FsdGVyYV9hdmFsb25fanRhZ191YXJ0LmF2YWxvbl9qdGFnX3NsYXZlJyAvPjwvYWRkcmVzcy1tYXA+::ZGF0YVNsYXZlTWFwUGFyYW0="
 set_global_assignment -entity "niosLab2_nios2_gen2_0_cpu" -library "niosLab2" -name IP_COMPONENT_PARAMETER "Y2xvY2tGcmVxdWVuY3k=::NTAwMDAwMDA=::Y2xvY2tGcmVxdWVuY3k="
 set_global_assignment -entity "niosLab2_nios2_gen2_0_cpu" -library "niosLab2" -name IP_COMPONENT_PARAMETER "ZGV2aWNlRmFtaWx5TmFtZQ==::Q3ljbG9uZSBW::ZGV2aWNlRmFtaWx5TmFtZQ=="
 set_global_assignment -entity "niosLab2_nios2_gen2_0_cpu" -library "niosLab2" -name IP_COMPONENT_PARAMETER "aW50ZXJuYWxJcnFNYXNrU3lzdGVtSW5mbw==::Mw==::aW50ZXJuYWxJcnFNYXNrU3lzdGVtSW5mbw=="
@@ -1156,9 +1145,9 @@ set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $:
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_mm_interconnect_0_rsp_mux_001.sv"]
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_mm_interconnect_0_rsp_mux.sv"]
-set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_mm_interconnect_0_rsp_demux_001.sv"]
+set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_mm_interconnect_0_rsp_demux_002.sv"]
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_mm_interconnect_0_rsp_demux.sv"]
-set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_mm_interconnect_0_cmd_mux_001.sv"]
+set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_mm_interconnect_0_cmd_mux_002.sv"]
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_mm_interconnect_0_cmd_mux.sv"]
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_mm_interconnect_0_cmd_demux_001.sv"]
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_mm_interconnect_0_cmd_demux.sv"]
@@ -1166,7 +1155,7 @@ set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $:
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_reorder_memory.sv"]
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_sc_fifo.v"]
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_st_pipeline_base.v"]
-set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_mm_interconnect_0_router_003.sv"]
+set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_mm_interconnect_0_router_004.sv"]
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_mm_interconnect_0_router_002.sv"]
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_mm_interconnect_0_router_001.sv"]
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_mm_interconnect_0_router.sv"]
@@ -1175,27 +1164,27 @@ set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $:
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
 set_global_assignment -library "niosLab2" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
-set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_pio_2.v"]
 set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_pio_1.v"]
 set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_pio_0.v"]
+set_global_assignment -library "niosLab2" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/peripheral_motor.vhd"]
 set_global_assignment -library "niosLab2" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/niosLab2_onchip_memory2_1.hex"]
 set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_onchip_memory2_1.v"]
 set_global_assignment -library "niosLab2" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/niosLab2_onchip_memory2_0.hex"]
 set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_onchip_memory2_0.v"]
 set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0.v"]
-set_global_assignment -library "niosLab2" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_dc_tag_ram.mif"]
-set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_mult_cell.v"]
-set_global_assignment -library "niosLab2" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu.ocp"]
-set_global_assignment -library "niosLab2" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_ociram_default_contents.mif"]
-set_global_assignment -library "niosLab2" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_rf_ram_b.mif"]
-set_global_assignment -library "niosLab2" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_rf_ram_a.mif"]
-set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_test_bench.v"]
-set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_debug_slave_wrapper.v"]
-set_global_assignment -library "niosLab2" -name SDC_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu.sdc"]
 set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_debug_slave_sysclk.v"]
+set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_debug_slave_wrapper.v"]
+set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_mult_cell.v"]
+set_global_assignment -library "niosLab2" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_rf_ram_b.mif"]
+set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_test_bench.v"]
 set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu.v"]
+set_global_assignment -library "niosLab2" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu.ocp"]
+set_global_assignment -library "niosLab2" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_dc_tag_ram.mif"]
 set_global_assignment -library "niosLab2" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_bht_ram.mif"]
+set_global_assignment -library "niosLab2" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_rf_ram_a.mif"]
+set_global_assignment -library "niosLab2" -name SDC_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu.sdc"]
 set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_debug_slave_tck.v"]
+set_global_assignment -library "niosLab2" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_ociram_default_contents.mif"]
 set_global_assignment -library "niosLab2" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/niosLab2_nios2_gen2_0_cpu_ic_tag_ram.mif"]
 set_global_assignment -library "niosLab2" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/niosLab2_jtag_uart_0.v"]
 
@@ -1220,15 +1209,15 @@ set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_mux_001" -library 
 set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_mux" -library "niosLab2" -name IP_TOOL_NAME "altera_merlin_multiplexer"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_mux" -library "niosLab2" -name IP_TOOL_VERSION "18.1"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_mux" -library "niosLab2" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_TOOL_VERSION "18.1"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_001" -library "niosLab2" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_TOOL_VERSION "18.1"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux_002" -library "niosLab2" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux" -library "niosLab2" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux" -library "niosLab2" -name IP_TOOL_VERSION "18.1"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_rsp_demux" -library "niosLab2" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_TOOL_NAME "altera_merlin_multiplexer"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_TOOL_VERSION "18.1"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_001" -library "niosLab2" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_TOOL_VERSION "18.1"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux_002" -library "niosLab2" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux" -library "niosLab2" -name IP_TOOL_NAME "altera_merlin_multiplexer"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux" -library "niosLab2" -name IP_TOOL_VERSION "18.1"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_mux" -library "niosLab2" -name IP_TOOL_ENV "Qsys"
@@ -1241,9 +1230,9 @@ set_global_assignment -entity "niosLab2_mm_interconnect_0_cmd_demux" -library "n
 set_global_assignment -entity "altera_merlin_traffic_limiter" -library "niosLab2" -name IP_TOOL_NAME "altera_merlin_traffic_limiter"
 set_global_assignment -entity "altera_merlin_traffic_limiter" -library "niosLab2" -name IP_TOOL_VERSION "18.1"
 set_global_assignment -entity "altera_merlin_traffic_limiter" -library "niosLab2" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_TOOL_NAME "altera_merlin_router"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_TOOL_VERSION "18.1"
-set_global_assignment -entity "niosLab2_mm_interconnect_0_router_003" -library "niosLab2" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_TOOL_VERSION "18.1"
+set_global_assignment -entity "niosLab2_mm_interconnect_0_router_004" -library "niosLab2" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router_002" -library "niosLab2" -name IP_TOOL_NAME "altera_merlin_router"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router_002" -library "niosLab2" -name IP_TOOL_VERSION "18.1"
 set_global_assignment -entity "niosLab2_mm_interconnect_0_router_002" -library "niosLab2" -name IP_TOOL_ENV "Qsys"
@@ -1268,9 +1257,6 @@ set_global_assignment -entity "altera_merlin_slave_translator" -library "niosLab
 set_global_assignment -entity "altera_merlin_master_translator" -library "niosLab2" -name IP_TOOL_NAME "altera_merlin_master_translator"
 set_global_assignment -entity "altera_merlin_master_translator" -library "niosLab2" -name IP_TOOL_VERSION "18.1"
 set_global_assignment -entity "altera_merlin_master_translator" -library "niosLab2" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_TOOL_NAME "altera_avalon_pio"
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_TOOL_VERSION "18.1"
-set_global_assignment -entity "niosLab2_pio_2" -library "niosLab2" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "niosLab2_pio_1" -library "niosLab2" -name IP_TOOL_NAME "altera_avalon_pio"
 set_global_assignment -entity "niosLab2_pio_1" -library "niosLab2" -name IP_TOOL_VERSION "18.1"
 set_global_assignment -entity "niosLab2_pio_1" -library "niosLab2" -name IP_TOOL_ENV "Qsys"

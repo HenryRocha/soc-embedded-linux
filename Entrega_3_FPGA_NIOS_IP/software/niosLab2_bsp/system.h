@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'niosLab2'
  * SOPC Builder design path: ../../niosLab2.sopcinfo
  *
- * Generated: Wed Sep 23 18:55:25 BRT 2020
+ * Generated: Wed Nov 04 18:53:59 BRST 2020
  */
 
 /*
@@ -145,6 +145,7 @@
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_AVALON_PIO
 #define __ALTERA_NIOS2_GEN2
+#define __PERIPHERAL_MOTOR
 
 
 /*
@@ -271,6 +272,20 @@
 
 
 /*
+ * peripheral_motor_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_peripheral_motor_0 peripheral_motor
+#define PERIPHERAL_MOTOR_0_BASE 0x0
+#define PERIPHERAL_MOTOR_0_IRQ -1
+#define PERIPHERAL_MOTOR_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PERIPHERAL_MOTOR_0_NAME "/dev/peripheral_motor_0"
+#define PERIPHERAL_MOTOR_0_SPAN 64
+#define PERIPHERAL_MOTOR_0_TYPE "peripheral_motor"
+
+
+/*
  * pio_0 configuration
  *
  */
@@ -322,32 +337,5 @@
 #define PIO_1_RESET_VALUE 0
 #define PIO_1_SPAN 16
 #define PIO_1_TYPE "altera_avalon_pio"
-
-
-/*
- * pio_2 configuration
- *
- */
-
-#define ALT_MODULE_CLASS_pio_2 altera_avalon_pio
-#define PIO_2_BASE 0xa1000
-#define PIO_2_BIT_CLEARING_EDGE_REGISTER 0
-#define PIO_2_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define PIO_2_CAPTURE 0
-#define PIO_2_DATA_WIDTH 4
-#define PIO_2_DO_TEST_BENCH_WIRING 0
-#define PIO_2_DRIVEN_SIM_VALUE 0
-#define PIO_2_EDGE_TYPE "NONE"
-#define PIO_2_FREQ 50000000
-#define PIO_2_HAS_IN 0
-#define PIO_2_HAS_OUT 1
-#define PIO_2_HAS_TRI 0
-#define PIO_2_IRQ -1
-#define PIO_2_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define PIO_2_IRQ_TYPE "NONE"
-#define PIO_2_NAME "/dev/pio_2"
-#define PIO_2_RESET_VALUE 0
-#define PIO_2_SPAN 16
-#define PIO_2_TYPE "altera_avalon_pio"
 
 #endif /* __SYSTEM_H_ */

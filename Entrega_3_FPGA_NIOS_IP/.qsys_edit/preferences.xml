@@ -8,8 +8,7 @@
    <name preferredWidth="206" />
   </columns>
  </systemtable>
- <library
-   expandedCategories="Library/Basic Functions,Project,Library/Basic Functions/On Chip Memory,Library" />
- <window width="1853" height="1055" x="67" y="25" />
+ <library expandedCategories="Library,Project" />
+ <window width="1920" height="1053" x="0" y="27" />
  <hdlexample language="VHDL" />
 </preferences>

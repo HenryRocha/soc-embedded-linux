@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include "system.h"
+#include <alt_types.h>
+#include <io.h> /* Leiutura e escrita no Avalon */
+#include "altera_avalon_pio_regs.h"
+#include "motor.h"
+#include <unistd.h>
+#include "sys/alt_irq.h"
+
+
+int main()
+{
+  printf("Pegando ponteiro\n");
+  unsigned int *p_motor = (unsigned int *) PERIPHERAL_MOTOR_0_BASE;
+  char dir = 0;
+
+  printf("Iniciando motor\n");
+  motor_init(p_motor);
+
+  while(1) {
+    dir =! dir;
+    motor_en(p_motor);
+    motor_vel(p_motor + 2, 1);
+    usleep(7000000);
+    motor_vel(p_motor + 2, 2);
+    usleep(7000000);
+    motor_vel(p_motor + 2, 3);
+    usleep(7000000);
+    motor_halt(p_motor);
+    usleep(7000000);
+    motor_dir(p_motor + 1, dir);
+    printf("-------\n");
+  }
+
+  return 0;
+}
