@@ -4,8 +4,9 @@
 
 `timescale 1 ps / 1 ps
 module niosLab2 (
+		input  wire [3:0] buts_export,   //  buts.export
 		input  wire       clk_clk,       //   clk.clk
-		output wire [3:0] leds_name,     //  leds.name
+		output wire [3:0] leds_leds,     //  leds.leds
 		input  wire       reset_reset_n  // reset.reset_n
 	);
 
@@ -50,8 +51,11 @@ module niosLab2 (
 	wire         mm_interconnect_0_onchip_memory2_0_s1_write;                 // mm_interconnect_0:onchip_memory2_0_s1_write -> onchip_memory2_0:write
 	wire  [31:0] mm_interconnect_0_onchip_memory2_0_s1_writedata;             // mm_interconnect_0:onchip_memory2_0_s1_writedata -> onchip_memory2_0:writedata
 	wire         mm_interconnect_0_onchip_memory2_0_s1_clken;                 // mm_interconnect_0:onchip_memory2_0_s1_clken -> onchip_memory2_0:clken
+	wire  [31:0] mm_interconnect_0_pio_0_s1_readdata;                         // pio_0:readdata -> mm_interconnect_0:pio_0_s1_readdata
+	wire   [1:0] mm_interconnect_0_pio_0_s1_address;                          // mm_interconnect_0:pio_0_s1_address -> pio_0:address
+	wire         irq_mapper_receiver0_irq;                                    // jtag_uart_0:av_irq -> irq_mapper:receiver0_irq
 	wire  [31:0] nios2_gen2_0_irq_irq;                                        // irq_mapper:sender_irq -> nios2_gen2_0:irq
-	wire         rst_controller_reset_out_reset;                              // rst_controller:reset_out -> [irq_mapper:reset, jtag_uart_0:rst_n, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, nios2_gen2_0:reset_n, onchip_memory2_0:reset, peripheral_LED_0:reset, rst_translator:in_reset]
+	wire         rst_controller_reset_out_reset;                              // rst_controller:reset_out -> [irq_mapper:reset, jtag_uart_0:rst_n, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, nios2_gen2_0:reset_n, onchip_memory2_0:reset, peripheral_LED_0:reset, pio_0:reset_n, rst_translator:in_reset]
 	wire         rst_controller_reset_out_reset_req;                          // rst_controller:reset_req -> [nios2_gen2_0:reset_req, onchip_memory2_0:reset_req, rst_translator:reset_req_in]
 
 	niosLab2_jtag_uart_0 jtag_uart_0 (
@@ -64,7 +68,7 @@ module niosLab2 (
 		.av_write_n     (~mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write),      //                  .write_n
 		.av_writedata   (mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_writedata),   //                  .writedata
 		.av_waitrequest (mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_waitrequest), //                  .waitrequest
-		.av_irq         ()                                                             //               irq.irq
+		.av_irq         (irq_mapper_receiver0_irq)                                     //               irq.irq
 	);
 
 	niosLab2_nios2_gen2_0 nios2_gen2_0 (
@@ -117,12 +121,20 @@ module niosLab2 (
 	) peripheral_led_0 (
 		.clk           (clk_clk),                                                     //          clock.clk
 		.reset         (rst_controller_reset_out_reset),                              //          reset.reset
-		.avs_address   (mm_interconnect_0_peripheral_led_0_avalon_slave_0_address),   // avalon_slave_0.address
-		.avs_read      (mm_interconnect_0_peripheral_led_0_avalon_slave_0_read),      //               .read
+		.avs_read      (mm_interconnect_0_peripheral_led_0_avalon_slave_0_read),      // avalon_slave_0.read
 		.avs_readdata  (mm_interconnect_0_peripheral_led_0_avalon_slave_0_readdata),  //               .readdata
 		.avs_write     (mm_interconnect_0_peripheral_led_0_avalon_slave_0_write),     //               .write
 		.avs_writedata (mm_interconnect_0_peripheral_led_0_avalon_slave_0_writedata), //               .writedata
-		.LEDs          (leds_name)                                                    //    conduit_end.name
+		.avs_address   (mm_interconnect_0_peripheral_led_0_avalon_slave_0_address),   //               .address
+		.LEDs          (leds_leds)                                                    //    conduit_end.leds
+	);
+
+	niosLab2_pio_0 pio_0 (
+		.clk      (clk_clk),                             //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),     //               reset.reset_n
+		.address  (mm_interconnect_0_pio_0_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_pio_0_s1_readdata), //                    .readdata
+		.in_port  (buts_export)                          // external_connection.export
 	);
 
 	niosLab2_mm_interconnect_0 mm_interconnect_0 (
@@ -168,13 +180,16 @@ module niosLab2 (
 		.peripheral_LED_0_avalon_slave_0_write          (mm_interconnect_0_peripheral_led_0_avalon_slave_0_write),     //                                         .write
 		.peripheral_LED_0_avalon_slave_0_read           (mm_interconnect_0_peripheral_led_0_avalon_slave_0_read),      //                                         .read
 		.peripheral_LED_0_avalon_slave_0_readdata       (mm_interconnect_0_peripheral_led_0_avalon_slave_0_readdata),  //                                         .readdata
-		.peripheral_LED_0_avalon_slave_0_writedata      (mm_interconnect_0_peripheral_led_0_avalon_slave_0_writedata)  //                                         .writedata
+		.peripheral_LED_0_avalon_slave_0_writedata      (mm_interconnect_0_peripheral_led_0_avalon_slave_0_writedata), //                                         .writedata
+		.pio_0_s1_address                               (mm_interconnect_0_pio_0_s1_address),                          //                                 pio_0_s1.address
+		.pio_0_s1_readdata                              (mm_interconnect_0_pio_0_s1_readdata)                          //                                         .readdata
 	);
 
 	niosLab2_irq_mapper irq_mapper (
-		.clk        (clk_clk),                        //       clk.clk
-		.reset      (rst_controller_reset_out_reset), // clk_reset.reset
-		.sender_irq (nios2_gen2_0_irq_irq)            //    sender.irq
+		.clk           (clk_clk),                        //       clk.clk
+		.reset         (rst_controller_reset_out_reset), // clk_reset.reset
+		.receiver0_irq (irq_mapper_receiver0_irq),       // receiver0.irq
+		.sender_irq    (nios2_gen2_0_irq_irq)            //    sender.irq
 	);
 
 	altera_reset_controller #(

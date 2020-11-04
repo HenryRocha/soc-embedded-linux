@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'niosLab2'
  * SOPC Builder design path: ../../niosLab2.sopcinfo
  *
- * Generated: Mon Sep 28 20:44:45 BRT 2020
+ * Generated: Wed Nov 04 16:39:39 BRST 2020
  */
 
 /*
@@ -143,6 +143,7 @@
 
 #define __ALTERA_AVALON_JTAG_UART
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
+#define __ALTERA_AVALON_PIO
 #define __ALTERA_NIOS2_GEN2
 #define __PERIPHERAL_LED
 
@@ -153,6 +154,7 @@
  */
 
 #define ALT_DEVICE_FAMILY "Cyclone V"
+#define ALT_ENHANCED_INTERRUPT_API_PRESENT
 #define ALT_IRQ_BASE NULL
 #define ALT_LOG_PORT "/dev/null"
 #define ALT_LOG_PORT_BASE 0x0
@@ -200,8 +202,8 @@
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
 #define JTAG_UART_0_BASE 0x11040
-#define JTAG_UART_0_IRQ -1
-#define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define JTAG_UART_0_IRQ 0
+#define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
 #define JTAG_UART_0_READ_DEPTH 64
 #define JTAG_UART_0_READ_THRESHOLD 8
@@ -252,5 +254,32 @@
 #define PERIPHERAL_LED_0_NAME "/dev/peripheral_LED_0"
 #define PERIPHERAL_LED_0_SPAN 64
 #define PERIPHERAL_LED_0_TYPE "peripheral_LED"
+
+
+/*
+ * pio_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_pio_0 altera_avalon_pio
+#define PIO_0_BASE 0x0
+#define PIO_0_BIT_CLEARING_EDGE_REGISTER 0
+#define PIO_0_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define PIO_0_CAPTURE 0
+#define PIO_0_DATA_WIDTH 4
+#define PIO_0_DO_TEST_BENCH_WIRING 0
+#define PIO_0_DRIVEN_SIM_VALUE 0
+#define PIO_0_EDGE_TYPE "NONE"
+#define PIO_0_FREQ 50000000
+#define PIO_0_HAS_IN 1
+#define PIO_0_HAS_OUT 0
+#define PIO_0_HAS_TRI 0
+#define PIO_0_IRQ -1
+#define PIO_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PIO_0_IRQ_TYPE "NONE"
+#define PIO_0_NAME "/dev/pio_0"
+#define PIO_0_RESET_VALUE 0
+#define PIO_0_SPAN 16
+#define PIO_0_TYPE "altera_avalon_pio"
 
 #endif /* __SYSTEM_H_ */

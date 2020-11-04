@@ -2,9 +2,9 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Sep 28, 2020 8:46:56 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1601336816888</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>/home/labarqcomp/Repos/soc-embedded-linux/Lab3_FPGA_IP/software/lab3_new_nios_bsp</BspGeneratedLocation>
+        <BspGeneratedTimeStamp>Nov 4, 2020 4:50:45 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1604515845039</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>/home/henryrocha/repos/soc-embedded-linux/Lab3_FPGA_IP/software/lab3_new_nios_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../niosLab2.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
@@ -898,6 +898,12 @@
                 <Enabled>false</Enabled>
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
+        <MemoryMap>
+                <slaveDescriptor>pio_0</slaveDescriptor>
+                <addressRange>0x00000000 - 0x0000000F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>onchip_memory2_0</slaveDescriptor>
                 <addressRange>0x00008000 - 0x0000FCFF</addressRange>

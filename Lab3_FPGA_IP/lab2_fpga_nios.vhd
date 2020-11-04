@@ -1,32 +1,31 @@
-library IEEE;
-use IEEE.std_logic_1164.all;
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
 
-entity LAB2_FPGA_NIOS is
-    port (
-        -- Gloabals
-        fpga_clk_50        : in  std_logic;             -- clock.clk
+ENTITY LAB2_FPGA_NIOS IS
+  PORT (
+    -- Gloabals
+    fpga_clk_50 : IN STD_LOGIC; -- clock.clk
 
-        -- I/Os
-        fpga_led_pio       : out std_logic_vector(5 downto 0)
+    -- I/Os
+    fpga_led_pio : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    fpga_switch  : IN STD_LOGIC_VECTOR(3 DOWNTO 0)
   );
-end entity LAB2_FPGA_NIOS;
+END ENTITY LAB2_FPGA_NIOS;
 
-architecture rtl of LAB2_FPGA_NIOS is
-
-component niosLab2 is
-        port (
-            clk_clk       : in  std_logic                    := 'X'; -- clk
-            leds_name     : out std_logic_vector(3 downto 0);        -- name
-            reset_reset_n : in  std_logic                    := 'X'  -- reset_n
-        );
-    end component niosLab2;
-
-begin
-
-u0 : component niosLab2 port map (
-  clk_clk       => fpga_clk_50,    --  clk.clk
-  reset_reset_n => '1',            --  reset.reset_n
-  leds_name   => fpga_led_pio(3 downto 0)    --  leds.export
-);
-
-end rtl;
+ARCHITECTURE rtl OF LAB2_FPGA_NIOS IS
+  COMPONENT niosLab2 IS
+    PORT (
+      clk_clk       : IN STD_LOGIC := 'X';                               -- clk
+      reset_reset_n : IN STD_LOGIC := 'X';                               -- reset_n
+      leds_leds     : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);                  -- leds
+      buts_export   : IN STD_LOGIC_VECTOR(3 DOWNTO 0) := (OTHERS => 'X') -- export
+    );
+  END COMPONENT niosLab2;
+BEGIN
+  u0 : COMPONENT niosLab2 PORT MAP(
+    clk_clk       => fpga_clk_50,  --  clk.clk
+    reset_reset_n => '1',          --  reset.reset_n
+    leds_leds     => fpga_led_pio, --  leds.leds
+    buts_export   => fpga_switch   --  buts.export
+  );
+END rtl;
