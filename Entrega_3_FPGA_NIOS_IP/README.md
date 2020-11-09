@@ -1,7 +1,8 @@
-# Entrega 1 - Controlando um motor de passos
+# Entrega 3 - Controlando um motor de passos através do HPS
 
 ## Descrição da entrega
-Desenvolver o controle de um motor de passos usando o NIOS 2 (Soft Processor). Esse componente deve controlar as quatro fases de um motor de passos de forma a girar o motor nos dois sentidos e com algumas velocidades diferentes.
+
+Nessa entrega iremos encapsular o periférico que criamos para controlar o motor de passos da entrega 1 no Plataform Designer (criando um periférico mapeado em memória) a fim de possuirmos um componente dedicado para controlar o motor.
 
 ## Descrição da implementação
 
@@ -12,29 +13,18 @@ TODO
 - Placa: FPGA DE10-Standard
 - Motor: Rohs Step Motor 28BYJ-48
 
-## Pinos usados e sua descrição
-
-- Switch SW0: Liga ou desliga a rotação do motor.
-- Switch SW1: Controla a direção de rotação do motor.
-- Switch SW2 e SW3: Controlam a velocidade do motor. Configuração `00` é a mais lenta enquanto `11` é a mais rápida.
-
 ## Rúbrica
 
 Rubrica
 
-- A
-  - [ ] Insira um RTOS no NIOS para fazer o controle da aplicação
-  - Ou
-  - [ ] Curva de aceleração no motor
-- B
-  - [X] Implementar VEL no SWx
-  - [X] Interrupção na leitura do botão
+- A / B
+  - [X] motor_dir
+  - [X] motor_vel
+  - [X] Arquivos `motor.c` e `motor.h`
 - C
-  - [X] Memória de dados separada da de programa
-  - [X] JTAG gerando interrupção.
-  - [X] PIO dedicado a ler botões (SWx) e controlar EN e DIR
-- D
-  - [X] Entregou somente tutorial
+  - [X] motor_init
+  - [X] motor_halt
+  - [X] motor_en
 - I
   - [ ] Não entregou nada
 
