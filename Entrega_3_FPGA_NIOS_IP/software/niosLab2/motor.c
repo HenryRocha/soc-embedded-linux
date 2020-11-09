@@ -16,39 +16,29 @@ int main()
 
   printf("Iniciando motor\n");
   motor_init(p_motor);
-  motor_dir(p_motor + 1, dir);
 
-  printf("Ligando motor\n");
-  motor_en(p_motor);
+  while (1) {
+    printf("Ligando motor\n");
+    motor_en(p_motor);
+    
+    printf("Configurando a dir do motor %c\n", dir);
+    motor_dir(p_motor + 1, dir);
 
-  printf("Motor em vel 0\n");
-  motor_vel(p_motor + 2, 0);
-  printf("Dormindo por 10s\n");
-  usleep(10000000);
+    printf("Motor em VEL 1 e dormindo por 5s\n");
+    motor_vel(p_motor + 2, 1);
+    usleep(3000000);
 
-  printf("Motor em vel 1\n");
-  motor_vel(p_motor + 2, 1);
-  printf("Dormindo por 10s\n");
-  usleep(10000000);
+    printf("Motor em VEL 3 e dormindo por 5s\n");
+    motor_vel(p_motor + 2, 3);
+    usleep(3000000);
 
-  printf("Motor em vel 3\n");
-  motor_vel(p_motor + 2, 3);
-  printf("Dormindo por 10s\n");
-  usleep(10000000);
+    printf("Parando o motor\n");
+    motor_halt(p_motor);
+    usleep(1000000);
 
-  printf("Parando o motor\n");
-  motor_halt(p_motor);
-  printf("Encerrando\n");
-  usleep(20000000);
-  printf("Parou de girar\n");
-
-//  while(1) {
-//    dir =! dir;
-//    usleep(7000000);
-//    usleep(7000000);
-//    motor_dir(p_motor + 1, dir);
-//    printf("-------\n");
-//  }
+    printf("Invertendo dir\n");
+    dir = !dir;
+  }
 
   return 0;
 }

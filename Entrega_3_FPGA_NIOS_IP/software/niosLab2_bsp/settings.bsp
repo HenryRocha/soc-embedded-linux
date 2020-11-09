@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Nov 4, 2020 6:53:59 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1604523239426</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Nov 9, 2020 7:10:26 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1604956226518</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>/home/henryrocha/repos/soc-embedded-linux/Entrega_3_FPGA_NIOS_IP/software/niosLab2_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../niosLab2.sopcinfo</SopcDesignFile>
