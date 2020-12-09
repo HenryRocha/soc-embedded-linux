@@ -1,9 +1,9 @@
-22:34:21 **** Incremental Build of configuration Nios II for project niosLab2 ****
+16:23:33 **** Incremental Build of configuration Nios II for project niosLab2 ****
 make all 
 Info: Building ../niosLab2_bsp/
 make --no-print-directory -C ../niosLab2_bsp/
 [BSP build complete]
 [niosLab2 build complete]
 
-22:34:22 Build Finished (took 513ms)
+16:23:34 Build Finished (took 409ms)
 
